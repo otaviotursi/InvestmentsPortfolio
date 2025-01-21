@@ -1,0 +1,1811 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|c:\\projetos\\investmentsportfolio\\investments\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|c:\\projetos\\investmentsportfolio\\investments\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|solutionrelative:serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|c:\\projetos\\investmentsportfolio\\investments\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|c:\\projetos\\investmentsportfolio\\investments\\products\\service\\kafka\\productkafkaconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|solutionrelative:products\\service\\kafka\\productkafkaconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|c:\\projetos\\investmentsportfolio\\investments\\statement\\service\\kafka\\statementkafkaconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|solutionrelative:statement\\service\\kafka\\statementkafkaconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|c:\\projetos\\investmentsportfolio\\investments\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4C8A7E7-ABDD-4818-B2F6-7C2496E6B9F5}|..\\tests\\FunctionalTests\\FunctionalTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\functionaltests\\productcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4C8A7E7-ABDD-4818-B2F6-7C2496E6B9F5}|..\\tests\\FunctionalTests\\FunctionalTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\functionaltests\\customercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4C8A7E7-ABDD-4818-B2F6-7C2496E6B9F5}|..\\tests\\FunctionalTests\\FunctionalTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\functionaltests\\usercontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4C8A7E7-ABDD-4818-B2F6-7C2496E6B9F5}|..\\tests\\FunctionalTests\\FunctionalTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\functionaltests\\portfoliocontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\portfolio\\services\\kafka\\portfoliokafkaconsumerservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\product\\query\\handler\\getstatementbyproductqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\product\\command\\handler\\deleteproductcommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\users\\query\\handler\\getbyuserqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\statement\\event\\handler\\insertportfoliostatementbycustomereventhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\users\\command\\handler\\createusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\users\\command\\handler\\deleteusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\users\\command\\handler\\updateusercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\users\\query\\handler\\getalluserqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\statement\\query\\handler\\getportfoliostatementbycustomerqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\statement\\services\\kafka\\statementkafkaconsumerservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\product\\services\\kafka\\productkafkaconsumerservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\product\\repository\\productstatementrepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\product\\command\\handler\\updateproductcommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\product\\query\\handler\\getproductbyqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\product\\query\\handler\\getallproductqueryhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\product\\event\\handler\\updateproducteventhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\product\\event\\handler\\deleteproducteventhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\product\\event\\handler\\createproducteventhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\portfolio\\command\\handler\\operateportfoliocustomercommandhandlertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4604A34-A6E1-4887-B23B-1D8FE79C299B}|..\\tests\\UnitTests\\UnitTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\unittests\\unittests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4C8A7E7-ABDD-4818-B2F6-7C2496E6B9F5}|..\\tests\\FunctionalTests\\FunctionalTests.csproj|c:\\projetos\\investmentsportfolio\\tests\\functionaltests\\functionaltests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\IntegratedTests\\CustomerControllerIntegrationTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\otavi\\AppData\\Local\\Temp\\uslgbztn..cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|c:\\projetos\\investmentsportfolio\\investments\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|c:\\projetos\\investmentsportfolio\\investments\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|c:\\projetos\\investmentsportfolio\\investments\\controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|solutionrelative:controllers\\portfoliocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|c:\\projetos\\investmentsportfolio\\investments\\users\\command\\handler\\createusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|solutionrelative:users\\command\\handler\\createusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|c:\\projetos\\investmentsportfolio\\investments\\users\\repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|solutionrelative:users\\repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|c:\\projetos\\investmentsportfolio\\investments\\users\\query\\getbyuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|solutionrelative:users\\query\\getbyuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|c:\\projetos\\investmentsportfolio\\investments\\users\\query\\getalluserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|solutionrelative:users\\query\\getalluserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|c:\\projetos\\investmentsportfolio\\investments\\users\\query\\handler\\getbyuserqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|solutionrelative:users\\query\\handler\\getbyuserqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|c:\\projetos\\investmentsportfolio\\investments\\users\\query\\handler\\getalluserqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|solutionrelative:users\\query\\handler\\getalluserqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|c:\\projetos\\investmentsportfolio\\investments\\users\\command\\updateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|solutionrelative:users\\command\\updateusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|c:\\projetos\\investmentsportfolio\\investments\\users\\command\\createusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|solutionrelative:users\\command\\createusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|c:\\projetos\\investmentsportfolio\\investments\\users\\command\\deleteusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|solutionrelative:users\\command\\deleteusercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|c:\\projetos\\investmentsportfolio\\investments\\users\\command\\handler\\updateusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|solutionrelative:users\\command\\handler\\updateusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|c:\\projetos\\investmentsportfolio\\investments\\users\\command\\handler\\deleteusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D820DD2B-2894-40AE-B953-31595940E340}|Users\\Users.csproj|solutionrelative:users\\command\\handler\\deleteusercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|c:\\projetos\\investmentsportfolio\\investments\\customers\\query\\handler\\getbycustomerqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|solutionrelative:customers\\query\\handler\\getbycustomerqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|c:\\projetos\\investmentsportfolio\\investments\\customers\\query\\handler\\getallcustomerqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|solutionrelative:customers\\query\\handler\\getallcustomerqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|c:\\projetos\\investmentsportfolio\\investments\\customers\\command\\handler\\updatecustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|solutionrelative:customers\\command\\handler\\updatecustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|c:\\projetos\\investmentsportfolio\\investments\\customers\\command\\handler\\deletecustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|solutionrelative:customers\\command\\handler\\deletecustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|c:\\projetos\\investmentsportfolio\\investments\\customers\\command\\createcustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|solutionrelative:customers\\command\\createcustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|c:\\projetos\\investmentsportfolio\\investments\\customers\\command\\updatecustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|solutionrelative:customers\\command\\updatecustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|c:\\projetos\\investmentsportfolio\\investments\\customers\\command\\deletecustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|solutionrelative:customers\\command\\deletecustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|c:\\projetos\\investmentsportfolio\\investments\\customers\\repository\\interface\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|solutionrelative:customers\\repository\\interface\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|c:\\projetos\\investmentsportfolio\\investments\\customers\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|solutionrelative:customers\\repository\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|c:\\projetos\\investmentsportfolio\\investments\\customers\\command\\handler\\createcustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A49ED16B-C7B9-4F11-A06D-6C7EA06FF898}|Customers\\Customers.csproj|solutionrelative:customers\\command\\handler\\createcustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BF0FA84-547D-4DE4-8EFF-37847C8123CB}|Statement\\Statement.csproj|c:\\projetos\\investmentsportfolio\\investments\\statement\\repository\\portfoliostatementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BF0FA84-547D-4DE4-8EFF-37847C8123CB}|Statement\\Statement.csproj|solutionrelative:statement\\repository\\portfoliostatementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BF0FA84-547D-4DE4-8EFF-37847C8123CB}|Statement\\Statement.csproj|c:\\projetos\\investmentsportfolio\\investments\\statement\\repository\\interface\\iportfoliostatementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BF0FA84-547D-4DE4-8EFF-37847C8123CB}|Statement\\Statement.csproj|solutionrelative:statement\\repository\\interface\\iportfoliostatementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4572E30-8E56-4EE7-8C7C-1F6B1348F315}|Products\\Products.csproj|c:\\projetos\\investmentsportfolio\\investments\\products\\repository\\interface\\iproductstatementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4572E30-8E56-4EE7-8C7C-1F6B1348F315}|Products\\Products.csproj|solutionrelative:products\\repository\\interface\\iproductstatementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4572E30-8E56-4EE7-8C7C-1F6B1348F315}|Products\\Products.csproj|c:\\projetos\\investmentsportfolio\\investments\\products\\repository\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4572E30-8E56-4EE7-8C7C-1F6B1348F315}|Products\\Products.csproj|solutionrelative:products\\repository\\interface\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4572E30-8E56-4EE7-8C7C-1F6B1348F315}|Products\\Products.csproj|c:\\projetos\\investmentsportfolio\\investments\\products\\repository\\productstatementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4572E30-8E56-4EE7-8C7C-1F6B1348F315}|Products\\Products.csproj|solutionrelative:products\\repository\\productstatementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4572E30-8E56-4EE7-8C7C-1F6B1348F315}|Products\\Products.csproj|c:\\projetos\\investmentsportfolio\\investments\\products\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4572E30-8E56-4EE7-8C7C-1F6B1348F315}|Products\\Products.csproj|solutionrelative:products\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BF0FA84-547D-4DE4-8EFF-37847C8123CB}|Statement\\Statement.csproj|c:\\projetos\\investmentsportfolio\\investments\\statement\\query\\getportfoliostatementbycustomerquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BF0FA84-547D-4DE4-8EFF-37847C8123CB}|Statement\\Statement.csproj|solutionrelative:statement\\query\\getportfoliostatementbycustomerquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|c:\\projetos\\investmentsportfolio\\investments\\portfolio\\repository\\portfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBF89C52-93AC-49AF-AB57-FA2C74ABBBB2}|Investments.csproj|solutionrelative:portfolio\\repository\\portfoliorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|c:\\projetos\\investmentsportfolio\\investments\\portfolio\\query\\handler\\getportfoliobycustomerqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\query\\handler\\getportfoliobycustomerqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|c:\\projetos\\investmentsportfolio\\investments\\portfolio\\query\\getportfoliobycustomerquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\query\\getportfoliobycustomerquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|c:\\projetos\\investmentsportfolio\\investments\\portfolio\\service\\kafka\\portfoliokafkaconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\service\\kafka\\portfoliokafkaconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|c:\\projetos\\investmentsportfolio\\investments\\portfolio\\query\\handler\\getportfolioallcustomersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\query\\handler\\getportfolioallcustomersqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|c:\\projetos\\investmentsportfolio\\investments\\portfolio\\event\\handler\\insertportfolioeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\event\\handler\\insertportfolioeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|c:\\projetos\\investmentsportfolio\\investments\\portfolio\\event\\handler\\deleteportfolioeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\event\\handler\\deleteportfolioeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|c:\\projetos\\investmentsportfolio\\investments\\portfolio\\event\\deleteportfolioevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\event\\deleteportfolioevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|c:\\projetos\\investmentsportfolio\\investments\\portfolio\\event\\insertportfolioevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\event\\insertportfolioevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|c:\\projetos\\investmentsportfolio\\investments\\portfolio\\command\\handler\\operateportfoliocustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38F56F4C-BD1D-4FD7-8C9D-6DADF79529E9}|Portfolio\\Portfolio.csproj|solutionrelative:portfolio\\command\\handler\\operateportfoliocustomercommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\FunctionalTests\\CustomerControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\FunctionalTests\\ProductControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\FunctionalTests\\UserControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\IntegratedTests\\IntegratedTests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\FunctionalTests\\PortfolioControllerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\IntegratedTests\\UserControllerIntegrationTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\IntegratedTests\\PortfolioControllerIntegrationTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\IntegratedTests\\ProductControllerIntegrationTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Users\\Query\\Handler\\GetAllUserQueryHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Users\\Query\\Handler\\GetByUserQueryHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Users\\Command\\Handler\\DeleteUserCommandHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Users\\Command\\Handler\\UpdateUserCommandHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Customers\\Command\\Handler\\UpdateCustomerCommandHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Customers\\Query\\Handler\\GetAllCustomerQueryHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Customers\\Command\\Handler\\CreateCustomerCommandHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Customers\\Command\\Handler\\DeleteCustomerCommandHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Users\\Command\\Handler\\CreateUserCommandHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Customers\\Query\\Handler\\GetByCustomerQueryHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Statement\\Services\\Kafka\\StatementKafkaConsumerServiceTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Statement\\Query\\Handler\\GetPortfolioStatementByCustomerQueryHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Product\\Services\\Kafka\\ProductKafkaConsumerServiceTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Statement\\Event\\Handler\\InsertPortfolioStatementByCustomerEventHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Portfolio\\Services\\Kafka\\PortfolioKafkaConsumerServiceTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Product\\Repository\\ProductRepositoryTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Portfolio\\Repository\\PortfolioRepositoryTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Product\\Query\\Handler\\GetStatementByProductQueryHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Product\\Event\\Handler\\UpdateProductEventHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Portfolio\\Query\\Handler\\GetPortfolioAllCustomersQueryHandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Portfolio\\Event\\Handler\\InsertPortfolioEventHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Portfolio\\Event\\Handler\\DeletePortfolioEventHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Portfolio\\Command\\Handler\\OperatePortfolioCustomerCommandHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Product\\Command\\Handler\\UpdateProductCommandHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Product\\Command\\Handler\\DeleteProductCommandHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Product\\Event\\Handler\\CreateProductEventHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Product\\Event\\Handler\\DeleteProductEventHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Product\\Query\\Handler\\GetProductByQueryHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Product\\Query\\Handler\\GetAllProductQueryHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Product\\Command\\Handler\\CreateProductCommandHandlerTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projetos\\Investments\\UnitTests\\Product\\Repository\\ProductStatementRepositoryTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:50:29.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:50:12.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "ServiceRegistration.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\ServiceRegistration.cs",
+              "RelativeToolTip": "ServiceRegistration.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:24:23.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserControllerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\FunctionalTests\\UserControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\FunctionalTests\\UserControllerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\FunctionalTests\\UserControllerTests.cs",
+              "RelativeToolTip": "..\\tests\\FunctionalTests\\UserControllerTests.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAIwI8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:09:30.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProductControllerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\FunctionalTests\\ProductControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\FunctionalTests\\ProductControllerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\FunctionalTests\\ProductControllerTests.cs",
+              "RelativeToolTip": "..\\tests\\FunctionalTests\\ProductControllerTests.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAgwHYAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:11:42.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerControllerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\FunctionalTests\\CustomerControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\FunctionalTests\\CustomerControllerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\FunctionalTests\\CustomerControllerTests.cs",
+              "RelativeToolTip": "..\\tests\\FunctionalTests\\CustomerControllerTests.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAowHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:09:06.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductKafkaConsumerService.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Products\\Service\\Kafka\\ProductKafkaConsumerService.cs",
+              "RelativeDocumentMoniker": "Products\\Service\\Kafka\\ProductKafkaConsumerService.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Products\\Service\\Kafka\\ProductKafkaConsumerService.cs",
+              "RelativeToolTip": "Products\\Service\\Kafka\\ProductKafkaConsumerService.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAUwD8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:50:54.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StatementKafkaConsumerService.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Statement\\Service\\Kafka\\StatementKafkaConsumerService.cs",
+              "RelativeDocumentMoniker": "Statement\\Service\\Kafka\\StatementKafkaConsumerService.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Statement\\Service\\Kafka\\StatementKafkaConsumerService.cs",
+              "RelativeToolTip": "Statement\\Service\\Kafka\\StatementKafkaConsumerService.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwDkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:06:13.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PortfolioControllerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\FunctionalTests\\PortfolioControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\FunctionalTests\\PortfolioControllerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\FunctionalTests\\PortfolioControllerTests.cs",
+              "RelativeToolTip": "..\\tests\\FunctionalTests\\PortfolioControllerTests.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAMwHAAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:11:48.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC4AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-21T22:21:52.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PortfolioKafkaConsumerServiceTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Portfolio\\Services\\Kafka\\PortfolioKafkaConsumerServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Portfolio\\Services\\Kafka\\PortfolioKafkaConsumerServiceTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Portfolio\\Services\\Kafka\\PortfolioKafkaConsumerServiceTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Portfolio\\Services\\Kafka\\PortfolioKafkaConsumerServiceTests.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAewB8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:58.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GetStatementByProductQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Query\\Handler\\GetStatementByProductQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Product\\Query\\Handler\\GetStatementByProductQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Query\\Handler\\GetStatementByProductQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Product\\Query\\Handler\\GetStatementByProductQueryHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:54.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DeleteProductCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Command\\Handler\\DeleteProductCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Product\\Command\\Handler\\DeleteProductCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Command\\Handler\\DeleteProductCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Product\\Command\\Handler\\DeleteProductCommandHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:52.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GetByUserQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Users\\Query\\Handler\\GetByUserQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Users\\Query\\Handler\\GetByUserQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Users\\Query\\Handler\\GetByUserQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Users\\Query\\Handler\\GetByUserQueryHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:49.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "InsertPortfolioStatementByCustomerEventHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Statement\\Event\\Handler\\InsertPortfolioStatementByCustomerEventHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Statement\\Event\\Handler\\InsertPortfolioStatementByCustomerEventHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Statement\\Event\\Handler\\InsertPortfolioStatementByCustomerEventHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Statement\\Event\\Handler\\InsertPortfolioStatementByCustomerEventHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:48.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CreateUserCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Users\\Command\\Handler\\CreateUserCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Users\\Command\\Handler\\CreateUserCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Users\\Command\\Handler\\CreateUserCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Users\\Command\\Handler\\CreateUserCommandHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:45.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DeleteUserCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Users\\Command\\Handler\\DeleteUserCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Users\\Command\\Handler\\DeleteUserCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Users\\Command\\Handler\\DeleteUserCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Users\\Command\\Handler\\DeleteUserCommandHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:44.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UpdateUserCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Users\\Command\\Handler\\UpdateUserCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Users\\Command\\Handler\\UpdateUserCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Users\\Command\\Handler\\UpdateUserCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Users\\Command\\Handler\\UpdateUserCommandHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:41.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GetAllUserQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Users\\Query\\Handler\\GetAllUserQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Users\\Query\\Handler\\GetAllUserQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Users\\Query\\Handler\\GetAllUserQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Users\\Query\\Handler\\GetAllUserQueryHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:39.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GetPortfolioStatementByCustomerQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Statement\\Query\\Handler\\GetPortfolioStatementByCustomerQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Statement\\Query\\Handler\\GetPortfolioStatementByCustomerQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Statement\\Query\\Handler\\GetPortfolioStatementByCustomerQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Statement\\Query\\Handler\\GetPortfolioStatementByCustomerQueryHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:36.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "StatementKafkaConsumerServiceTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Statement\\Services\\Kafka\\StatementKafkaConsumerServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Statement\\Services\\Kafka\\StatementKafkaConsumerServiceTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Statement\\Services\\Kafka\\StatementKafkaConsumerServiceTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Statement\\Services\\Kafka\\StatementKafkaConsumerServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:34.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProductKafkaConsumerServiceTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Services\\Kafka\\ProductKafkaConsumerServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Product\\Services\\Kafka\\ProductKafkaConsumerServiceTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Services\\Kafka\\ProductKafkaConsumerServiceTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Product\\Services\\Kafka\\ProductKafkaConsumerServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAewBoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:32.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProductStatementRepositoryTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Repository\\ProductStatementRepositoryTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Product\\Repository\\ProductStatementRepositoryTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Repository\\ProductStatementRepositoryTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Product\\Repository\\ProductStatementRepositoryTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:30.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UpdateProductCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Command\\Handler\\UpdateProductCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Product\\Command\\Handler\\UpdateProductCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Command\\Handler\\UpdateProductCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Product\\Command\\Handler\\UpdateProductCommandHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:28.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GetProductByQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Query\\Handler\\GetProductByQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Product\\Query\\Handler\\GetProductByQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Query\\Handler\\GetProductByQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Product\\Query\\Handler\\GetProductByQueryHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:27.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GetAllProductQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Query\\Handler\\GetAllProductQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Product\\Query\\Handler\\GetAllProductQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Query\\Handler\\GetAllProductQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Product\\Query\\Handler\\GetAllProductQueryHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:24.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UpdateProductEventHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Event\\Handler\\UpdateProductEventHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Product\\Event\\Handler\\UpdateProductEventHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Event\\Handler\\UpdateProductEventHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Product\\Event\\Handler\\UpdateProductEventHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:23.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "DeleteProductEventHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Event\\Handler\\DeleteProductEventHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Product\\Event\\Handler\\DeleteProductEventHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Event\\Handler\\DeleteProductEventHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Product\\Event\\Handler\\DeleteProductEventHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:20.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CreateProductEventHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Event\\Handler\\CreateProductEventHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Product\\Event\\Handler\\CreateProductEventHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Product\\Event\\Handler\\CreateProductEventHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Product\\Event\\Handler\\CreateProductEventHandlerTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:05:03.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "OperatePortfolioCustomerCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Portfolio\\Command\\Handler\\OperatePortfolioCustomerCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\Portfolio\\Command\\Handler\\OperatePortfolioCustomerCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\Portfolio\\Command\\Handler\\OperatePortfolioCustomerCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\tests\\UnitTests\\Portfolio\\Command\\Handler\\OperatePortfolioCustomerCommandHandlerTests.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAUwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T22:01:54.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UnitTests",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\UnitTests.csproj",
+              "RelativeDocumentMoniker": "..\\tests\\UnitTests\\UnitTests.csproj",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\UnitTests\\UnitTests.csproj",
+              "RelativeToolTip": "..\\tests\\UnitTests\\UnitTests.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-21T22:01:35.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "FunctionalTests",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\tests\\FunctionalTests\\FunctionalTests.csproj",
+              "RelativeDocumentMoniker": "..\\tests\\FunctionalTests\\FunctionalTests.csproj",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\tests\\FunctionalTests\\FunctionalTests.csproj",
+              "RelativeToolTip": "..\\tests\\FunctionalTests\\FunctionalTests.csproj",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-21T22:00:18.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CustomerControllerIntegrationTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\IntegratedTests\\CustomerControllerIntegrationTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\IntegratedTests\\CustomerControllerIntegrationTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\IntegratedTests\\CustomerControllerIntegrationTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\IntegratedTests\\CustomerControllerIntegrationTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T21:42:35.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "ProductControllerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\FunctionalTests\\ProductControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\FunctionalTests\\ProductControllerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\FunctionalTests\\ProductControllerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\FunctionalTests\\ProductControllerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T21:30:31.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "UserControllerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\FunctionalTests\\UserControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\FunctionalTests\\UserControllerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\FunctionalTests\\UserControllerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\FunctionalTests\\UserControllerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T21:30:39.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "CustomerControllerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\FunctionalTests\\CustomerControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\FunctionalTests\\CustomerControllerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\FunctionalTests\\CustomerControllerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\FunctionalTests\\CustomerControllerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T21:30:21.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "IntegratedTests.csproj",
+              "DocumentMoniker": "C:\\projetos\\Investments\\IntegratedTests\\IntegratedTests.csproj",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\IntegratedTests\\IntegratedTests.csproj",
+              "ToolTip": "C:\\projetos\\Investments\\IntegratedTests\\IntegratedTests.csproj",
+              "RelativeToolTip": "..\\..\\Investments\\IntegratedTests\\IntegratedTests.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-21T21:40:45.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "PortfolioControllerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\FunctionalTests\\PortfolioControllerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\FunctionalTests\\PortfolioControllerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\FunctionalTests\\PortfolioControllerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\FunctionalTests\\PortfolioControllerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T21:30:47.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "UserControllerIntegrationTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\IntegratedTests\\UserControllerIntegrationTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\IntegratedTests\\UserControllerIntegrationTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\IntegratedTests\\UserControllerIntegrationTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\IntegratedTests\\UserControllerIntegrationTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T21:30:52.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "PortfolioControllerIntegrationTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\IntegratedTests\\PortfolioControllerIntegrationTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\IntegratedTests\\PortfolioControllerIntegrationTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\IntegratedTests\\PortfolioControllerIntegrationTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\IntegratedTests\\PortfolioControllerIntegrationTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T21:42:15.87Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "ProductControllerIntegrationTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\IntegratedTests\\ProductControllerIntegrationTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\IntegratedTests\\ProductControllerIntegrationTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\IntegratedTests\\ProductControllerIntegrationTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\IntegratedTests\\ProductControllerIntegrationTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T21:30:05.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "uslgbztn..cs",
+              "DocumentMoniker": "C:\\Users\\otavi\\AppData\\Local\\Temp\\uslgbztn..cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\otavi\\AppData\\Local\\Temp\\uslgbztn..cs",
+              "ToolTip": "C:\\Users\\otavi\\AppData\\Local\\Temp\\uslgbztn..cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\otavi\\AppData\\Local\\Temp\\uslgbztn..cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T21:29:14.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PortfolioController.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Controllers\\PortfolioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PortfolioController.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Controllers\\PortfolioController.cs",
+              "RelativeToolTip": "Controllers\\PortfolioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:38:19.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Controllers\\ProductController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:38:11.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:38:04.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "GetAllUserQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Users\\Query\\Handler\\GetAllUserQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Users\\Query\\Handler\\GetAllUserQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Users\\Query\\Handler\\GetAllUserQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Users\\Query\\Handler\\GetAllUserQueryHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:35:10.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "GetByUserQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Users\\Query\\Handler\\GetByUserQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Users\\Query\\Handler\\GetByUserQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Users\\Query\\Handler\\GetByUserQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Users\\Query\\Handler\\GetByUserQueryHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:34:39.572Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "DeleteUserCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Users\\Command\\Handler\\DeleteUserCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Users\\Command\\Handler\\DeleteUserCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Users\\Command\\Handler\\DeleteUserCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Users\\Command\\Handler\\DeleteUserCommandHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:28:06.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "UpdateUserCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Users\\Command\\Handler\\UpdateUserCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Users\\Command\\Handler\\UpdateUserCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Users\\Command\\Handler\\UpdateUserCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Users\\Command\\Handler\\UpdateUserCommandHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:28:08.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "UpdateCustomerCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Customers\\Command\\Handler\\UpdateCustomerCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Customers\\Command\\Handler\\UpdateCustomerCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Customers\\Command\\Handler\\UpdateCustomerCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Customers\\Command\\Handler\\UpdateCustomerCommandHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:23:55.854Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "GetAllCustomerQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Customers\\Query\\Handler\\GetAllCustomerQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Customers\\Query\\Handler\\GetAllCustomerQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Customers\\Query\\Handler\\GetAllCustomerQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Customers\\Query\\Handler\\GetAllCustomerQueryHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:25:24.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "CreateCustomerCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Customers\\Command\\Handler\\CreateCustomerCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Customers\\Command\\Handler\\CreateCustomerCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Customers\\Command\\Handler\\CreateCustomerCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Customers\\Command\\Handler\\CreateCustomerCommandHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:21:06.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "DeleteCustomerCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Customers\\Command\\Handler\\DeleteCustomerCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Customers\\Command\\Handler\\DeleteCustomerCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Customers\\Command\\Handler\\DeleteCustomerCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Customers\\Command\\Handler\\DeleteCustomerCommandHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:23:20.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "CreateUserCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Users\\Command\\Handler\\CreateUserCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Users\\Command\\Handler\\CreateUserCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Users\\Command\\Handler\\CreateUserCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Users\\Command\\Handler\\CreateUserCommandHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:27:57.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CreateUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Command\\Handler\\CreateUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "Users\\Command\\Handler\\CreateUserCommandHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Command\\Handler\\CreateUserCommandHandler.cs",
+              "RelativeToolTip": "Users\\Command\\Handler\\CreateUserCommandHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBZwCAAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:28:36.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Repository\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Users\\Repository\\Interface\\IUserRepository.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Repository\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "Users\\Repository\\Interface\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:32:32.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "GetByUserQuery.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Query\\GetByUserQuery.cs",
+              "RelativeDocumentMoniker": "Users\\Query\\GetByUserQuery.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Query\\GetByUserQuery.cs",
+              "RelativeToolTip": "Users\\Query\\GetByUserQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:29:10.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "GetAllUserQuery.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Query\\GetAllUserQuery.cs",
+              "RelativeDocumentMoniker": "Users\\Query\\GetAllUserQuery.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Query\\GetAllUserQuery.cs",
+              "RelativeToolTip": "Users\\Query\\GetAllUserQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:29:09.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "GetByUserQueryHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Query\\Handler\\GetByUserQueryHandler.cs",
+              "RelativeDocumentMoniker": "Users\\Query\\Handler\\GetByUserQueryHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Query\\Handler\\GetByUserQueryHandler.cs",
+              "RelativeToolTip": "Users\\Query\\Handler\\GetByUserQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:29:06.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "GetAllUserQueryHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Query\\Handler\\GetAllUserQueryHandler.cs",
+              "RelativeDocumentMoniker": "Users\\Query\\Handler\\GetAllUserQueryHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Query\\Handler\\GetAllUserQueryHandler.cs",
+              "RelativeToolTip": "Users\\Query\\Handler\\GetAllUserQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:29:02.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UpdateUserCommand.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Command\\UpdateUserCommand.cs",
+              "RelativeDocumentMoniker": "Users\\Command\\UpdateUserCommand.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Command\\UpdateUserCommand.cs",
+              "RelativeToolTip": "Users\\Command\\UpdateUserCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:28:58.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CreateUserCommand.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Command\\CreateUserCommand.cs",
+              "RelativeDocumentMoniker": "Users\\Command\\CreateUserCommand.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Command\\CreateUserCommand.cs",
+              "RelativeToolTip": "Users\\Command\\CreateUserCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:28:57.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "DeleteUserCommand.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Command\\DeleteUserCommand.cs",
+              "RelativeDocumentMoniker": "Users\\Command\\DeleteUserCommand.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Command\\DeleteUserCommand.cs",
+              "RelativeToolTip": "Users\\Command\\DeleteUserCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:28:53.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "UpdateUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Command\\Handler\\UpdateUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "Users\\Command\\Handler\\UpdateUserCommandHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Command\\Handler\\UpdateUserCommandHandler.cs",
+              "RelativeToolTip": "Users\\Command\\Handler\\UpdateUserCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:28:47.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "DeleteUserCommandHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Command\\Handler\\DeleteUserCommandHandler.cs",
+              "RelativeDocumentMoniker": "Users\\Command\\Handler\\DeleteUserCommandHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Command\\Handler\\DeleteUserCommandHandler.cs",
+              "RelativeToolTip": "Users\\Command\\Handler\\DeleteUserCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:28:44.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "GetByCustomerQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Customers\\Query\\Handler\\GetByCustomerQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Customers\\Query\\Handler\\GetByCustomerQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Customers\\Query\\Handler\\GetByCustomerQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Customers\\Query\\Handler\\GetByCustomerQueryHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:26:56.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "UpdateCustomerCommandHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Command\\Handler\\UpdateCustomerCommandHandler.cs",
+              "RelativeDocumentMoniker": "Customers\\Command\\Handler\\UpdateCustomerCommandHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Command\\Handler\\UpdateCustomerCommandHandler.cs",
+              "RelativeToolTip": "Customers\\Command\\Handler\\UpdateCustomerCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:21:41.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "GetByCustomerQueryHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Query\\Handler\\GetByCustomerQueryHandler.cs",
+              "RelativeDocumentMoniker": "Customers\\Query\\Handler\\GetByCustomerQueryHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Query\\Handler\\GetByCustomerQueryHandler.cs",
+              "RelativeToolTip": "Customers\\Query\\Handler\\GetByCustomerQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:21:50.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "GetAllCustomerQueryHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Query\\Handler\\GetAllCustomerQueryHandler.cs",
+              "RelativeDocumentMoniker": "Customers\\Query\\Handler\\GetAllCustomerQueryHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Query\\Handler\\GetAllCustomerQueryHandler.cs",
+              "RelativeToolTip": "Customers\\Query\\Handler\\GetAllCustomerQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:21:47.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "CreateCustomerCommand.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Command\\CreateCustomerCommand.cs",
+              "RelativeDocumentMoniker": "Customers\\Command\\CreateCustomerCommand.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Command\\CreateCustomerCommand.cs",
+              "RelativeToolTip": "Customers\\Command\\CreateCustomerCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:21:45.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "UpdateCustomerCommand.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Command\\UpdateCustomerCommand.cs",
+              "RelativeDocumentMoniker": "Customers\\Command\\UpdateCustomerCommand.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Command\\UpdateCustomerCommand.cs",
+              "RelativeToolTip": "Customers\\Command\\UpdateCustomerCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:21:46.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "DeleteCustomerCommand.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Command\\DeleteCustomerCommand.cs",
+              "RelativeDocumentMoniker": "Customers\\Command\\DeleteCustomerCommand.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Command\\DeleteCustomerCommand.cs",
+              "RelativeToolTip": "Customers\\Command\\DeleteCustomerCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:22:53.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "DeleteCustomerCommandHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Command\\Handler\\DeleteCustomerCommandHandler.cs",
+              "RelativeDocumentMoniker": "Customers\\Command\\Handler\\DeleteCustomerCommandHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Command\\Handler\\DeleteCustomerCommandHandler.cs",
+              "RelativeToolTip": "Customers\\Command\\Handler\\DeleteCustomerCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:21:38.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Repository\\Interface\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "Customers\\Repository\\Interface\\ICustomerRepository.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Repository\\Interface\\ICustomerRepository.cs",
+              "RelativeToolTip": "Customers\\Repository\\Interface\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:22:14.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Repository\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "Customers\\Repository\\CustomerRepository.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Repository\\CustomerRepository.cs",
+              "RelativeToolTip": "Customers\\Repository\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:22:10.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "CreateCustomerCommandHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Command\\Handler\\CreateCustomerCommandHandler.cs",
+              "RelativeDocumentMoniker": "Customers\\Command\\Handler\\CreateCustomerCommandHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Customers\\Command\\Handler\\CreateCustomerCommandHandler.cs",
+              "RelativeToolTip": "Customers\\Command\\Handler\\CreateCustomerCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:20:46.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "StatementKafkaConsumerServiceTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Statement\\Services\\Kafka\\StatementKafkaConsumerServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Statement\\Services\\Kafka\\StatementKafkaConsumerServiceTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Statement\\Services\\Kafka\\StatementKafkaConsumerServiceTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Statement\\Services\\Kafka\\StatementKafkaConsumerServiceTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:07:06.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "GetPortfolioStatementByCustomerQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Statement\\Query\\Handler\\GetPortfolioStatementByCustomerQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Statement\\Query\\Handler\\GetPortfolioStatementByCustomerQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Statement\\Query\\Handler\\GetPortfolioStatementByCustomerQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Statement\\Query\\Handler\\GetPortfolioStatementByCustomerQueryHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:04:16.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "ProductKafkaConsumerServiceTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Product\\Services\\Kafka\\ProductKafkaConsumerServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Product\\Services\\Kafka\\ProductKafkaConsumerServiceTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Product\\Services\\Kafka\\ProductKafkaConsumerServiceTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Product\\Services\\Kafka\\ProductKafkaConsumerServiceTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:07:52.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "PortfolioStatementRepository.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Statement\\Repository\\PortfolioStatementRepository.cs",
+              "RelativeDocumentMoniker": "Statement\\Repository\\PortfolioStatementRepository.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Statement\\Repository\\PortfolioStatementRepository.cs",
+              "RelativeToolTip": "Statement\\Repository\\PortfolioStatementRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:05:48.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "IPortfolioStatementRepository.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Statement\\Repository\\Interface\\IPortfolioStatementRepository.cs",
+              "RelativeDocumentMoniker": "Statement\\Repository\\Interface\\IPortfolioStatementRepository.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Statement\\Repository\\Interface\\IPortfolioStatementRepository.cs",
+              "RelativeToolTip": "Statement\\Repository\\Interface\\IPortfolioStatementRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:06:05.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "IProductStatementRepository.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Products\\Repository\\Interface\\IProductStatementRepository.cs",
+              "RelativeDocumentMoniker": "Products\\Repository\\Interface\\IProductStatementRepository.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Products\\Repository\\Interface\\IProductStatementRepository.cs",
+              "RelativeToolTip": "Products\\Repository\\Interface\\IProductStatementRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:05:20.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Products\\Repository\\Interface\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Products\\Repository\\Interface\\IProductRepository.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Products\\Repository\\Interface\\IProductRepository.cs",
+              "RelativeToolTip": "Products\\Repository\\Interface\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:05:19.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "ProductStatementRepository.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Products\\Repository\\ProductStatementRepository.cs",
+              "RelativeDocumentMoniker": "Products\\Repository\\ProductStatementRepository.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Products\\Repository\\ProductStatementRepository.cs",
+              "RelativeToolTip": "Products\\Repository\\ProductStatementRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:05:15.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Products\\Repository\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Products\\Repository\\ProductRepository.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Products\\Repository\\ProductRepository.cs",
+              "RelativeToolTip": "Products\\Repository\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:05:13.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "GetPortfolioStatementByCustomerQuery.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Statement\\Query\\GetPortfolioStatementByCustomerQuery.cs",
+              "RelativeDocumentMoniker": "Statement\\Query\\GetPortfolioStatementByCustomerQuery.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Statement\\Query\\GetPortfolioStatementByCustomerQuery.cs",
+              "RelativeToolTip": "Statement\\Query\\GetPortfolioStatementByCustomerQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:04:00.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "InsertPortfolioStatementByCustomerEventHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Statement\\Event\\Handler\\InsertPortfolioStatementByCustomerEventHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Statement\\Event\\Handler\\InsertPortfolioStatementByCustomerEventHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Statement\\Event\\Handler\\InsertPortfolioStatementByCustomerEventHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Statement\\Event\\Handler\\InsertPortfolioStatementByCustomerEventHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T03:02:44.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "PortfolioRepository.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Repository\\PortfolioRepository.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Repository\\PortfolioRepository.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Repository\\PortfolioRepository.cs",
+              "RelativeToolTip": "Portfolio\\Repository\\PortfolioRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAswBgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:57:19.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "PortfolioKafkaConsumerServiceTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Portfolio\\Services\\Kafka\\PortfolioKafkaConsumerServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Portfolio\\Services\\Kafka\\PortfolioKafkaConsumerServiceTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Portfolio\\Services\\Kafka\\PortfolioKafkaConsumerServiceTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Portfolio\\Services\\Kafka\\PortfolioKafkaConsumerServiceTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:59:39.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "ProductRepositoryTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Product\\Repository\\ProductRepositoryTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Product\\Repository\\ProductRepositoryTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Product\\Repository\\ProductRepositoryTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Product\\Repository\\ProductRepositoryTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:09:23.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "PortfolioRepositoryTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Portfolio\\Repository\\PortfolioRepositoryTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Portfolio\\Repository\\PortfolioRepositoryTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Portfolio\\Repository\\PortfolioRepositoryTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Portfolio\\Repository\\PortfolioRepositoryTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:58:01.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "GetPortfolioByCustomerQueryHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Query\\Handler\\GetPortfolioByCustomerQueryHandler.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Query\\Handler\\GetPortfolioByCustomerQueryHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Query\\Handler\\GetPortfolioByCustomerQueryHandler.cs",
+              "RelativeToolTip": "Portfolio\\Query\\Handler\\GetPortfolioByCustomerQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:53:48.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "GetStatementByProductQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Product\\Query\\Handler\\GetStatementByProductQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Product\\Query\\Handler\\GetStatementByProductQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Product\\Query\\Handler\\GetStatementByProductQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Product\\Query\\Handler\\GetStatementByProductQueryHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:11:07.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "GetPortfolioByCustomerQuery.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Query\\GetPortfolioByCustomerQuery.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Query\\GetPortfolioByCustomerQuery.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Query\\GetPortfolioByCustomerQuery.cs",
+              "RelativeToolTip": "Portfolio\\Query\\GetPortfolioByCustomerQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:56:41.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "UpdateProductEventHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Product\\Event\\Handler\\UpdateProductEventHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Product\\Event\\Handler\\UpdateProductEventHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Product\\Event\\Handler\\UpdateProductEventHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Product\\Event\\Handler\\UpdateProductEventHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:19:10.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "GetPortfolioAllCustomersQueryHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Portfolio\\Query\\Handler\\GetPortfolioAllCustomersQueryHandler.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Portfolio\\Query\\Handler\\GetPortfolioAllCustomersQueryHandler.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Portfolio\\Query\\Handler\\GetPortfolioAllCustomersQueryHandler.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Portfolio\\Query\\Handler\\GetPortfolioAllCustomersQueryHandler.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:54:12.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "InsertPortfolioEventHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Portfolio\\Event\\Handler\\InsertPortfolioEventHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Portfolio\\Event\\Handler\\InsertPortfolioEventHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Portfolio\\Event\\Handler\\InsertPortfolioEventHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Portfolio\\Event\\Handler\\InsertPortfolioEventHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:49:34.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "DeletePortfolioEventHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Portfolio\\Event\\Handler\\DeletePortfolioEventHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Portfolio\\Event\\Handler\\DeletePortfolioEventHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Portfolio\\Event\\Handler\\DeletePortfolioEventHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Portfolio\\Event\\Handler\\DeletePortfolioEventHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:47:26.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "OperatePortfolioCustomerCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Portfolio\\Command\\Handler\\OperatePortfolioCustomerCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Portfolio\\Command\\Handler\\OperatePortfolioCustomerCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Portfolio\\Command\\Handler\\OperatePortfolioCustomerCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Portfolio\\Command\\Handler\\OperatePortfolioCustomerCommandHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:45:50.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "UpdateProductCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Product\\Command\\Handler\\UpdateProductCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Product\\Command\\Handler\\UpdateProductCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Product\\Command\\Handler\\UpdateProductCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Product\\Command\\Handler\\UpdateProductCommandHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:12:01.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 107,
+              "Title": "DeleteProductCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Product\\Command\\Handler\\DeleteProductCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Product\\Command\\Handler\\DeleteProductCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Product\\Command\\Handler\\DeleteProductCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Product\\Command\\Handler\\DeleteProductCommandHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:12:15.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 108,
+              "Title": "CreateProductEventHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Product\\Event\\Handler\\CreateProductEventHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Product\\Event\\Handler\\CreateProductEventHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Product\\Event\\Handler\\CreateProductEventHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Product\\Event\\Handler\\CreateProductEventHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:11:38.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 109,
+              "Title": "DeleteProductEventHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Product\\Event\\Handler\\DeleteProductEventHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Product\\Event\\Handler\\DeleteProductEventHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Product\\Event\\Handler\\DeleteProductEventHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Product\\Event\\Handler\\DeleteProductEventHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:11:51.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 110,
+              "Title": "GetProductByQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Product\\Query\\Handler\\GetProductByQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Product\\Query\\Handler\\GetProductByQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Product\\Query\\Handler\\GetProductByQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Product\\Query\\Handler\\GetProductByQueryHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:11:27.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 111,
+              "Title": "GetAllProductQueryHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Product\\Query\\Handler\\GetAllProductQueryHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Product\\Query\\Handler\\GetAllProductQueryHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Product\\Query\\Handler\\GetAllProductQueryHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Product\\Query\\Handler\\GetAllProductQueryHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:09:28.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 112,
+              "Title": "CreateProductCommandHandlerTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Product\\Command\\Handler\\CreateProductCommandHandlerTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Product\\Command\\Handler\\CreateProductCommandHandlerTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Product\\Command\\Handler\\CreateProductCommandHandlerTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Product\\Command\\Handler\\CreateProductCommandHandlerTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:52:12.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 113,
+              "Title": "ProductStatementRepositoryTests.cs",
+              "DocumentMoniker": "C:\\projetos\\Investments\\UnitTests\\Product\\Repository\\ProductStatementRepositoryTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\Investments\\UnitTests\\Product\\Repository\\ProductStatementRepositoryTests.cs",
+              "ToolTip": "C:\\projetos\\Investments\\UnitTests\\Product\\Repository\\ProductStatementRepositoryTests.cs",
+              "RelativeToolTip": "..\\..\\Investments\\UnitTests\\Product\\Repository\\ProductStatementRepositoryTests.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:09:18.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "PortfolioKafkaConsumerService.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Service\\Kafka\\PortfolioKafkaConsumerService.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Service\\Kafka\\PortfolioKafkaConsumerService.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Service\\Kafka\\PortfolioKafkaConsumerService.cs",
+              "RelativeToolTip": "Portfolio\\Service\\Kafka\\PortfolioKafkaConsumerService.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAiwGcAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T02:01:02.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "GetPortfolioAllCustomersQueryHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Query\\Handler\\GetPortfolioAllCustomersQueryHandler.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Query\\Handler\\GetPortfolioAllCustomersQueryHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Query\\Handler\\GetPortfolioAllCustomersQueryHandler.cs",
+              "RelativeToolTip": "Portfolio\\Query\\Handler\\GetPortfolioAllCustomersQueryHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:53:55.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "DeletePortfolioEvent.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Event\\DeletePortfolioEvent.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Event\\DeletePortfolioEvent.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Event\\DeletePortfolioEvent.cs",
+              "RelativeToolTip": "Portfolio\\Event\\DeletePortfolioEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:50:29.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "InsertPortfolioEventHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Event\\Handler\\InsertPortfolioEventHandler.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Event\\Handler\\InsertPortfolioEventHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Event\\Handler\\InsertPortfolioEventHandler.cs",
+              "RelativeToolTip": "Portfolio\\Event\\Handler\\InsertPortfolioEventHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:50:22.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "InsertPortfolioEvent.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Event\\InsertPortfolioEvent.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Event\\InsertPortfolioEvent.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Event\\InsertPortfolioEvent.cs",
+              "RelativeToolTip": "Portfolio\\Event\\InsertPortfolioEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:50:12.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "DeletePortfolioEventHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Event\\Handler\\DeletePortfolioEventHandler.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Event\\Handler\\DeletePortfolioEventHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Event\\Handler\\DeletePortfolioEventHandler.cs",
+              "RelativeToolTip": "Portfolio\\Event\\Handler\\DeletePortfolioEventHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:46:54.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "OperatePortfolioCustomerCommandHandler.cs",
+              "DocumentMoniker": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Command\\Handler\\OperatePortfolioCustomerCommandHandler.cs",
+              "RelativeDocumentMoniker": "Portfolio\\Command\\Handler\\OperatePortfolioCustomerCommandHandler.cs",
+              "ToolTip": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Command\\Handler\\OperatePortfolioCustomerCommandHandler.cs",
+              "RelativeToolTip": "Portfolio\\Command\\Handler\\OperatePortfolioCustomerCommandHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T01:46:37.19Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

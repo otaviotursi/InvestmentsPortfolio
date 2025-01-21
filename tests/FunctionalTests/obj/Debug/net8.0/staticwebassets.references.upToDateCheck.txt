@@ -1,0 +1,4 @@
+C:\projetos\InvestmentsPortfolio\Investments\obj\Debug\net8.0\staticwebassets.build.json
+C:\projetos\InvestmentsPortfolio\Investments\obj\Debug\net8.0\staticwebassets.build.json
+C:\projetos\InvestmentsPortfolio\Investments\obj\Debug\net8.0\staticwebassets.build.json
+C:\projetos\InvestmentsPortfolio\Investments\obj\Debug\net8.0\staticwebassets.build.json
