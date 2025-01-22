@@ -39,7 +39,8 @@
   <ItemGroup>
     <Folder Include="Core\" />
     <Folder Include="Customers\" />
-    <Folder Include="mongodbdata\" />
+    <Folder Include="mongodbdata\diagnostic.data\" />
+    <Folder Include="mongodbdata\journal\" />
     <Folder Include="Portfolio\" />
     <Folder Include="Statement\" />
     <Folder Include="Users\" />
