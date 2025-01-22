@@ -6026,11 +6026,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Portfolio.csproj",
+      "projectUniqueName": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Portfolio\\Portfolio.csproj",
       "projectName": "Portfolio",
-      "projectPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\Portfolio.csproj",
+      "projectPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Portfolio\\Portfolio.csproj",
       "packagesPath": "C:\\Users\\otavi\\.nuget\\packages\\",
-      "outputPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Portfolio\\obj\\",
+      "outputPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Portfolio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6051,14 +6051,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\projetos\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj"
+            "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj"
             },
-            "C:\\projetos\\InvestmentsPortfolio\\Investments\\Products\\Products.csproj": {
-              "projectPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Products\\Products.csproj"
+            "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Products\\Products.csproj": {
+              "projectPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Products\\Products.csproj"
             },
-            "C:\\projetos\\InvestmentsPortfolio\\Investments\\Statement\\Statement.csproj": {
-              "projectPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Statement\\Statement.csproj"
+            "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Statement\\Statement.csproj": {
+              "projectPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Statement\\Statement.csproj"
             }
           }
         }

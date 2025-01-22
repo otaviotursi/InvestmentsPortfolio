@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projetos\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj": {}
+    "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\projetos\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj": {
+    "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj",
+        "projectPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\otavi\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Core\\obj\\",
+        "outputPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

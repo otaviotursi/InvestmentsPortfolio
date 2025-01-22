@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "VWhOkr1y7mTk+GGex70OCU4F4cM3hvUE9ytA4/pBBBc=",
+  "Hash": "/KcFUFrCXv9N3L8AVwngvZxg2jyw2yK2DuI9J4VjEnk=",
   "Source": "FunctionalTests",
   "BasePath": "_content/FunctionalTests",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Investments.csproj",
+      "Identity": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Investments.csproj",
       "Version": 2,
       "Source": "Investments",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

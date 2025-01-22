@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Users.csproj": {}
+    "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Users\\Users.csproj": {}
   },
   "projects": {
-    "C:\\projetos\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj": {
+    "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj",
+        "projectPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\otavi\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Core\\obj\\",
+        "outputPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -153,14 +153,14 @@
         }
       }
     },
-    "C:\\projetos\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj": {
+    "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj",
+        "projectPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\otavi\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\InfraStructure\\obj\\",
+        "outputPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\InfraStructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -181,8 +181,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\projetos\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj": {
-                "projectPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj"
+              "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj": {
+                "projectPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Core\\Core.csproj"
               }
             }
           }
@@ -236,14 +236,14 @@
         }
       }
     },
-    "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Users.csproj": {
+    "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Users\\Users.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Users.csproj",
+        "projectUniqueName": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Users\\Users.csproj",
         "projectName": "Users",
-        "projectPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\Users.csproj",
+        "projectPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Users\\Users.csproj",
         "packagesPath": "C:\\Users\\otavi\\.nuget\\packages\\",
-        "outputPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\Users\\obj\\",
+        "outputPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\Users\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -264,8 +264,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\projetos\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\projetos\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj"
+              "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\projetos\\xp\\InvestmentsPortfolio\\Investments\\InfraStructure\\Infrastructure.csproj"
               }
             }
           }

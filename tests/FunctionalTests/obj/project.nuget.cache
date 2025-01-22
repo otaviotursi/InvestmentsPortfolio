@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BITeLPHW6BQ=",
+  "dgSpecHash": "bBUB88XJXR4=",
   "success": true,
-  "projectFilePath": "C:\\projetos\\InvestmentsPortfolio\\tests\\FunctionalTests\\FunctionalTests.csproj",
+  "projectFilePath": "C:\\projetos\\xp\\InvestmentsPortfolio\\tests\\FunctionalTests\\FunctionalTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\otavi\\.nuget\\packages\\ardalis.smartenum\\8.0.0\\ardalis.smartenum.8.0.0.nupkg.sha512",
     "C:\\Users\\otavi\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
