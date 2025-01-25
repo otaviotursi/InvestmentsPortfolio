@@ -8,18 +8,21 @@ using Xunit;
 using MediatR;
 using Infrastructure.Repository.Entities;
 using Products.Command;
+using Infrastructure.Cache;
 
 namespace UnitTests.Product.Query.Handler
 {
     public class GetProductByQueryHandlerTests
     {
+        private readonly Mock<ICacheHelper> _cacheHelper;
         private readonly Mock<IProductRepository> _repositoryMock;
         private readonly GetProductByQueryHandler _handler;
 
         public GetProductByQueryHandlerTests()
         {
+            _cacheHelper = new Mock<ICacheHelper>();
             _repositoryMock = new Mock<IProductRepository>();
-            _handler = new GetProductByQueryHandler(Mock.Of<IMediator>(), _repositoryMock.Object);
+            _handler = new GetProductByQueryHandler( _repositoryMock.Object, _cacheHelper.Object);
         }
 
         [Fact(DisplayName = "Should get product by id successfully")]

@@ -25,7 +25,7 @@ namespace Portfolio.Repository
             return await _eventCollection.Find(Builders<PortfolioDomain>.Filter.Empty).ToListAsync(cancellationToken);
         }
 
-        public async Task<PortfolioDomain> GetByName(ulong customerId, CancellationToken cancellationToken)
+        public async Task<PortfolioDomain> GetById(ulong customerId, CancellationToken cancellationToken)
         {
             var filter = Builders<PortfolioDomain>.Filter.Eq(x => x.CustomerId, customerId);
 

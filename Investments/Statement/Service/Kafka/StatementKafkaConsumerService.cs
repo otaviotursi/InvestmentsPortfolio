@@ -46,7 +46,7 @@ namespace Statement.Service.Kafka
                 BootstrapServers = _kafkaConfig.BootstrapServers,
                 GroupId = _kafkaConfig.ConsumerGroupId, // Adicionar um GroupId para o consumidor
                 AutoOffsetReset = AutoOffsetReset.Earliest, // Garantir que comece do início se não houver offsets salvos
-                EnableAutoCommit = true // Commit manual após processamento
+                EnableAutoCommit = false // Commit manual após processamento
             };
 
             _consumer = new ConsumerBuilder<string, string>(config).Build();
@@ -57,14 +57,13 @@ namespace Statement.Service.Kafka
             _consumer.Subscribe(_topics);
             _logger.LogInformation($"Inscrito nos tópicos: {string.Join(", ", _topics)}");
 
-
             try
             {
                 while (!stoppingToken.IsCancellationRequested)
                 {
                     try
                     {
-                        var consumeResult = _consumer.Consume(stoppingToken);
+                        var consumeResult = _consumer.Consume(TimeSpan.FromSeconds(10)); // Tempo limite configurado
                         if (consumeResult != null)
                         {
                             _logger.LogInformation($"Mensagem recebida do tópico {consumeResult.Topic}: {consumeResult.Message.Value}");
@@ -76,14 +75,19 @@ namespace Statement.Service.Kafka
                             }
 
                             _consumer.Commit();
+                            _logger.LogInformation("Mensagem processada e commit realizado.");
                         }
                     }
                     catch (ConsumeException e)
                     {
                         _logger.LogError($"Erro ao consumir mensagem: {e.Message}");
                     }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError($"Erro inesperado no processamento: {ex.Message}");
+                    }
 
-                    await Task.Delay(TimeSpan.FromSeconds(2), stoppingToken);
+                    await Task.Delay(TimeSpan.FromSeconds(2), stoppingToken); // Pausa entre consumos
                 }
             }
             catch (OperationCanceledException)
@@ -93,6 +97,7 @@ namespace Statement.Service.Kafka
             finally
             {
                 _consumer.Close();
+                _logger.LogInformation("Consumer Kafka encerrado.");
             }
         }
 

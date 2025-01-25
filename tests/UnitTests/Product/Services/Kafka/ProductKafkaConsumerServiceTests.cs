@@ -76,7 +76,7 @@ namespace UnitTests.Product.Services.Kafka
             // Arrange
             var product = new ProductDomain(Guid.NewGuid(), "Product1", 100, 10, "Type1", DateTime.UtcNow, 1);
             var message = JsonConvert.SerializeObject(product);
-            _consumerMock.Setup(c => c.Consume(It.IsAny<CancellationToken>())).Returns(new ConsumeResult<string, string>
+            _consumerMock.Setup(c => c.Consume(It.IsAny<TimeSpan>())).Returns(new ConsumeResult<string, string>
             {
                 Topic = KafkaTopics.InsertProductTopic,
                 Message = new Message<string, string> { Key = product.Id.ToString(), Value = message }
@@ -96,7 +96,7 @@ namespace UnitTests.Product.Services.Kafka
             // Arrange
             var product = new ProductDomain(Guid.NewGuid(), "Product1", 100, 10, "Type1", DateTime.UtcNow, 1);
             var message = JsonConvert.SerializeObject(product);
-            _consumerMock.Setup(c => c.Consume(It.IsAny<CancellationToken>())).Returns(new ConsumeResult<string, string>
+            _consumerMock.Setup(c => c.Consume(It.IsAny<TimeSpan>())).Returns(new ConsumeResult<string, string>
             {
                 Topic = KafkaTopics.UpdateProductTopic,
                 Message = new Message<string, string> { Key = product.Id.ToString(), Value = message }
@@ -116,7 +116,7 @@ namespace UnitTests.Product.Services.Kafka
             // Arrange
             var product = new ProductDomain(Guid.NewGuid(), "Product1", 100, 10, "Type1", DateTime.UtcNow, 1);
             var message = JsonConvert.SerializeObject(product);
-            _consumerMock.Setup(c => c.Consume(It.IsAny<CancellationToken>())).Returns(new ConsumeResult<string, string>
+            _consumerMock.Setup(c => c.Consume(It.IsAny<TimeSpan>())).Returns(new ConsumeResult<string, string>
             {
                 Topic = KafkaTopics.DeleteProductTopic,
                 Message = new Message<string, string> { Key = product.Id.ToString(), Value = message }
@@ -137,7 +137,7 @@ namespace UnitTests.Product.Services.Kafka
             var product = new ProductDomain(Guid.NewGuid(), "Product1", 100, 10, "Type1", DateTime.UtcNow.AddDays(5), 1);
             var products = new List<ProductDomain> { product };
             _productRepositoryMock.Setup(r => r.GetExpiritionByDateAll(It.IsAny<int>(), It.IsAny<CancellationToken>())).ReturnsAsync(products);
-            _consumerMock.Setup(c => c.Consume(It.IsAny<CancellationToken>())).Returns(new ConsumeResult<string, string>
+            _consumerMock.Setup(c => c.Consume(It.IsAny<TimeSpan>())).Returns(new ConsumeResult<string, string>
             {
                 Topic = KafkaTopics.ProductExpiryNotificationTopic,
                 Message = new Message<string, string> { Key = product.Id.ToString(), Value = string.Empty }

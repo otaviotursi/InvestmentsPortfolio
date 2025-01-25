@@ -167,7 +167,7 @@ namespace Investments
                 opt.InstanceName = configuration.GetSection("Regis:InstanceName")?.Value;
                 opt.Configuration = configuration.GetSection("Regis:Ip")?.Value;
             });
-            services.AddScoped<IRedisCacheHelper, RedisCacheHelper>();
+            services.AddScoped<ICacheHelper, CacheHelper>();
         }
     }
 }

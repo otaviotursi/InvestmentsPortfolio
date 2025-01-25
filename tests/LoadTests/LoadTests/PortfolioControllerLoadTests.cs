@@ -24,18 +24,33 @@ namespace LoadTests
         {
             string url = "https://localhost:44359";
             httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
             var scenario = Scenario.Create("Portfolio_Controller", async context =>
             {
-                (string productId, string productName) = await getProductAsync(url);
-                var operatePortfolioStep = Step.Run("operate_portfolio", context, async () =>
+                // Variável estática para armazenar o GUID
+                Guid currentGuid = Guid.NewGuid();
+                int deleteCounter = 0;
+
+                var createPortfolioStep = Step.Run("create_portfolio", context, async () =>
                 {
-                    int randomId = new Random().Next(1, 10);
                     Console.WriteLine($"POST {url}/Portfolio");
-                    var json = "{\"productId\":\"00000000-0000-0000-0000-000000000000\",\"customerId\":1,\"productName\":\"Test Product\",\"amountNegotiated\":1000,\"operationType\":\"Buy\"}";
+
+                    // Dados de exemplo para o JSON
+                    var operationTypes = new[] { "buy", "sell" };
+                    var random = new Random();
+
+                    var json = $@"
+                {{
+                    ""productId"": ""{currentGuid}"",
+                    ""customerId"": 1,
+                    ""productName"": ""aapl"",
+                    ""amountNegotiated"": 100,
+                    ""operationType"": ""{operationTypes[random.Next(operationTypes.Length)]}""
+                }}";
+
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
                     var response = await httpClient.PostAsync($"{url}/Portfolio", content);
                     Console.WriteLine($"Response: {response}");
+
                     if (response.IsSuccessStatusCode && response.Headers.Date.HasValue)
                     {
                         var responseTime = DateTime.UtcNow - response.Headers.Date.Value.UtcDateTime;
@@ -44,11 +59,38 @@ namespace LoadTests
                     return Response.Fail();
                 });
 
-                var getPortfolioStep = Step.Run("get_portfolio", context, async () =>
+                var updatePortfolioStep = Step.Run("update_portfolio", context, async () =>
                 {
-                    int randomId = new Random().Next(1, 10);
-                    Console.WriteLine($"GET {url}/Portfolio?customerId={randomId}");
-                    var response = await httpClient.GetAsync($"{url}/Portfolio?customerId={{randomId}}\"");
+                    Console.WriteLine($"PUT {url}/Portfolio");
+
+                    var operationTypes = new[] { "buy", "sell" };
+                    var random = new Random();
+
+                    var json = $@"
+                    {{
+                        ""productId"": ""{currentGuid}"",
+                        ""customerId"": 1,
+                        ""productName"": ""aapl"",
+                        ""amountNegotiated"": 150,
+                        ""operationType"": ""{operationTypes[random.Next(operationTypes.Length)]}""
+                    }}";
+
+                    var content = new StringContent(json, Encoding.UTF8, "application/json");
+                    var response = await httpClient.PutAsync($"{url}/Portfolio", content);
+                    Console.WriteLine($"Response: {response}");
+
+                    if (response.IsSuccessStatusCode && response.Headers.Date.HasValue)
+                    {
+                        var responseTime = DateTime.UtcNow - response.Headers.Date.Value.UtcDateTime;
+                        return responseTime.TotalMilliseconds < maxMilliseconds ? Response.Ok() : Response.Fail();
+                    }
+                    return Response.Fail();
+                });
+
+                var getAllPortfoliosStep = Step.Run("get_all_portfolios", context, async () =>
+                {
+                    Console.WriteLine($"GET {url}/Portfolio");
+                    var response = await httpClient.GetAsync($"{url}/Portfolio");
                     Console.WriteLine($"Response: {response}");
                     if (response.IsSuccessStatusCode && response.Headers.Date.HasValue)
                     {
@@ -58,11 +100,19 @@ namespace LoadTests
                     return Response.Fail();
                 });
 
-                var getPortfolioStatementStep = Step.Run("get_portfolio_statement", context, async () =>
+                var deletePortfolioStep = Step.Run("delete_portfolio", context, async () =>
                 {
-                    Console.WriteLine($"GET {url}/Portfolio/statement");
-                    var response = await httpClient.GetAsync($"{url}/Portfolio/statement");
+                    // Incrementa o contador e redefine o GUID a cada 10 execuções
+                    if (++deleteCounter % 10 == 0)
+                    {
+                        currentGuid = Guid.NewGuid();
+                        Console.WriteLine($"New GUID generated for delete: {currentGuid}");
+                    }
+
+                    Console.WriteLine($"DELETE {url}/Portfolio/{currentGuid}");
+                    var response = await httpClient.DeleteAsync($"{url}/Portfolio/{currentGuid}");
                     Console.WriteLine($"Response: {response}");
+
                     if (response.IsSuccessStatusCode && response.Headers.Date.HasValue)
                     {
                         var responseTime = DateTime.UtcNow - response.Headers.Date.Value.UtcDateTime;
@@ -97,9 +147,12 @@ namespace LoadTests
                 var productsArray = JArray.Parse(responseBody);
                 if (productsArray.Count > 0)
                 {
-                    var firstProduct = productsArray[0];
-                    productId = firstProduct["id"].ToString();
-                    productName = firstProduct["name"].ToString();
+                    var random = new Random();
+                    var randomIndex = random.Next(0, productsArray.Count); // Gera um índice aleatório
+                    var selectedProduct = productsArray[randomIndex];
+
+                    productId = selectedProduct["id"].ToString();
+                    productName = selectedProduct["name"].ToString();
                 }
             }
             return (productId, productName);

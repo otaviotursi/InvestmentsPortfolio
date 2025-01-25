@@ -18,16 +18,14 @@ namespace UnitTests.Portfolio.Command.Handler
     public class OperatePortfolioCustomerCommandHandlerTests
     {
         private readonly Mock<IMediator> _mediatorMock;
-        private readonly Mock<IPortfolioRepository> _repositoryMock;
         private readonly Mock<IMapper> _mapperMock;
         private readonly OperatePortfolioCustomerCommandHandler _handler;
 
         public OperatePortfolioCustomerCommandHandlerTests()
         {
             _mediatorMock = new Mock<IMediator>();
-            _repositoryMock = new Mock<IPortfolioRepository>();
             _mapperMock = new Mock<IMapper>();
-            _handler = new OperatePortfolioCustomerCommandHandler(_mediatorMock.Object, _repositoryMock.Object, _mapperMock.Object);
+            _handler = new OperatePortfolioCustomerCommandHandler(_mediatorMock.Object,  _mapperMock.Object);
         }
 
         [Fact(DisplayName = "Handle should throw exception when available quantity is insufficient for buy operation")]

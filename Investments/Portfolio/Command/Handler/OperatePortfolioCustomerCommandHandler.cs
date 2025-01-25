@@ -13,12 +13,10 @@ namespace Portfolio.Command.Handler
     public class OperatePortfolioCustomerCommandHandler : IRequestHandler<OperatePortfolioCustomerCommand, string>
     {
         private readonly IMediator _mediator;
-        private readonly IPortfolioRepository _repository;
         private readonly IMapper _mapper;
-        public OperatePortfolioCustomerCommandHandler(IMediator mediator, IPortfolioRepository repository, IMapper mapper)
+        public OperatePortfolioCustomerCommandHandler(IMediator mediator,IMapper mapper)
         {
             _mediator = mediator;
-            _repository = repository;
             _mapper = mapper;
         }
 

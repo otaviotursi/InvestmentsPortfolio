@@ -61,44 +61,48 @@ namespace Products.Service.Kafka
 
             _consumer.Subscribe(_topics);
             _logger.LogInformation($"Inscrito nos tópicos: {string.Join(", ", _topics)}");
-            using (var scope = _serviceProvider.CreateScope())
+            try
             {
-                var repository = scope.ServiceProvider.GetRequiredService<IProductRepository>();
-                var emailNotificationService = scope.ServiceProvider.GetRequiredService<IEmailNotificationService>();
-
-
-                try
+                while (!stoppingToken.IsCancellationRequested)
                 {
-                    while (!stoppingToken.IsCancellationRequested)
+                    try
                     {
-                        try
+                        var consumeResult = _consumer.Consume(TimeSpan.FromSeconds(10)); // Tempo limite configurado
+                        if (consumeResult != null)
                         {
-                            var consumeResult = _consumer.Consume(stoppingToken);
-                            if (consumeResult != null)
+                            _logger.LogInformation($"Mensagem recebida do tópico {consumeResult.Topic}: {consumeResult.Message.Value}");
+
+                            using (var scope = _serviceProvider.CreateScope())
                             {
-                                _logger.LogInformation($"Mensagem recebida do tópico {consumeResult.Topic}: {consumeResult.Message.Value}");
-
+                                var repository = scope.ServiceProvider.GetRequiredService<IProductRepository>();
+                                var emailNotificationService = scope.ServiceProvider.GetRequiredService<IEmailNotificationService>();
                                 await ProcessMessageAsync(consumeResult.Topic, consumeResult.Message.Key, consumeResult.Message.Value, repository, emailNotificationService, stoppingToken);
-
-                                _consumer.Commit();
                             }
-                        }
-                        catch (ConsumeException e)
-                        {
-                            _logger.LogError($"Erro ao consumir mensagem: {e.Message}");
-                        }
 
-                        await Task.Delay(TimeSpan.FromSeconds(2), stoppingToken);
+                            _consumer.Commit();
+                            _logger.LogInformation("Mensagem processada e commit realizado.");
+                        }
                     }
+                    catch (ConsumeException e)
+                    {
+                        _logger.LogError($"Erro ao consumir mensagem: {e.Message}");
+                    }
+                    catch (Exception ex)
+                    {
+                        _logger.LogError($"Erro inesperado no processamento: {ex.Message}");
+                    }
+
+                    await Task.Delay(TimeSpan.FromSeconds(2), stoppingToken); // Pausa entre consumos
                 }
-                catch (OperationCanceledException)
-                {
-                    _logger.LogInformation("Consumo de Kafka cancelado.");
-                }
-                finally
-                {
-                    _consumer.Close();
-                }
+            }
+            catch (OperationCanceledException)
+            {
+                _logger.LogInformation("Consumo de Kafka cancelado.");
+            }
+            finally
+            {
+                _consumer.Close();
+                _logger.LogInformation("Consumer Kafka encerrado.");
             }
         }
 

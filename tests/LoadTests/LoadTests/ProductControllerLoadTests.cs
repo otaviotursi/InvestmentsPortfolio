@@ -22,16 +22,35 @@ namespace LoadTests
         {
             string url = "https://localhost:44359";
             httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
             var scenario = Scenario.Create("Product_Controller", async context =>
             {
+                // Variável estática para armazenar o GUID
+                Guid currentGuid = Guid.NewGuid();
+                int deleteCounter = 0;
+
                 var createProductStep = Step.Run("create_product", context, async () =>
                 {
                     Console.WriteLine($"POST {url}/Product");
-                    var json = "{\"name\":\"Test Product\",\"description\":\"Test Description\",\"price\":100.0}";
+
+                    // Escolhe valores aleatórios para os campos adicionais
+                    var productTypes = new[] { "equity", "treasury", "bonds" };
+                    var unitPrices = new[] { 10, 20, 30, 50, 100 };
+                    var random = new Random();
+
+                    var json = $@"
+                    {{
+                        ""id"": ""{currentGuid}"",
+                        ""name"": ""Test Product"",
+                        ""description"": ""Test Description"",
+                        ""productType"": ""{productTypes[random.Next(productTypes.Length)]}"",
+                        ""unitPrice"": {unitPrices[random.Next(unitPrices.Length)]},
+                        ""price"": 100.0
+                    }}";
+
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
                     var response = await httpClient.PostAsync($"{url}/Product", content);
                     Console.WriteLine($"Response: {response}");
+
                     if (response.IsSuccessStatusCode && response.Headers.Date.HasValue)
                     {
                         var responseTime = DateTime.UtcNow - response.Headers.Date.Value.UtcDateTime;
@@ -42,12 +61,26 @@ namespace LoadTests
 
                 var updateProductStep = Step.Run("update_product", context, async () =>
                 {
-                    int randomId = new Random().Next(1, 10);
                     Console.WriteLine($"PUT {url}/Product");
-                    var json = $"{{\"id\":{randomId},\"name\":\"Updated Product\",\"description\":\"Updated Description\",\"price\":150.0}}";
+
+                    var productTypes = new[] { "equity", "treasury", "bonds" };
+                    var unitPrices = new[] { 10, 20, 30, 50, 100 };
+                    var random = new Random();
+
+                    var json = $@"
+                    {{
+                        ""id"": ""{currentGuid}"",
+                        ""name"": ""Updated Product"",
+                        ""description"": ""Updated Description"",
+                        ""productType"": ""{productTypes[random.Next(productTypes.Length)]}"",
+                        ""unitPrice"": {unitPrices[random.Next(unitPrices.Length)]},
+                        ""price"": 150.0
+                    }}";
+
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
                     var response = await httpClient.PutAsync($"{url}/Product", content);
                     Console.WriteLine($"Response: {response}");
+
                     if (response.IsSuccessStatusCode && response.Headers.Date.HasValue)
                     {
                         var responseTime = DateTime.UtcNow - response.Headers.Date.Value.UtcDateTime;
@@ -71,10 +104,17 @@ namespace LoadTests
 
                 var deleteProductStep = Step.Run("delete_product", context, async () =>
                 {
-                    int randomId = new Random().Next(1, 10);
-                    Console.WriteLine($"DELETE {url}/Product/{randomId}");
-                    var response = await httpClient.DeleteAsync($"{url}/Product/{randomId}");
+                    // Incrementa o contador e redefine o GUID a cada 10 execuções
+                    if (++deleteCounter % 10 == 0)
+                    {
+                        currentGuid = Guid.NewGuid();
+                        Console.WriteLine($"New GUID generated for delete: {currentGuid}");
+                    }
+
+                    Console.WriteLine($"DELETE {url}/Product/{currentGuid}");
+                    var response = await httpClient.DeleteAsync($"{url}/Product/{currentGuid}");
                     Console.WriteLine($"Response: {response}");
+
                     if (response.IsSuccessStatusCode && response.Headers.Date.HasValue)
                     {
                         var responseTime = DateTime.UtcNow - response.Headers.Date.Value.UtcDateTime;

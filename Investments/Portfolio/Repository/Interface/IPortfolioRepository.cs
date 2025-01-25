@@ -10,7 +10,7 @@ namespace Portfolio.Repository.Interface
     public interface IPortfolioRepository
     {
         Task<List<PortfolioDomain>> GetAll(CancellationToken cancellationToken);
-        Task<PortfolioDomain> GetByName(ulong customerId, CancellationToken cancellationToken);
+        Task<PortfolioDomain> GetById(ulong customerId, CancellationToken cancellationToken);
         Task InsertAsync(PortfolioRequest product, CancellationToken cancellationToken);
         Task RemoveAsync(PortfolioRequest product, CancellationToken cancellationToken);
     }

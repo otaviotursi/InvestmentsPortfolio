@@ -1,31 +1,39 @@
-﻿using Infrastructure.Repository.Entities;
+﻿using Infrastructure.Cache;
+using Infrastructure.Repository.Entities;
 using MediatR;
-using Products.Event;
+using Newtonsoft.Json;
 using Products.Repository.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Products.Command.Handler
 {
     public class GetAllProductQueryHandler : IRequestHandler<GetAllProductQuery, List<ProductDomain>>
     {
-        private readonly IMediator _mediator;
         private readonly IProductRepository _repository;
+        private readonly ICacheHelper _cacheHelper;
+        private readonly string keyCacheAll = "product_all";
 
-        public GetAllProductQueryHandler(IMediator mediator, IProductRepository repositoryWrite)
+
+        public GetAllProductQueryHandler(IProductRepository repository, ICacheHelper cacheHelper)
         {
-            _mediator = mediator;
-            _repository = repositoryWrite;
+            _repository = repository;
+            _cacheHelper = cacheHelper;
         }
 
         public async Task<List<ProductDomain>> Handle(GetAllProductQuery command, CancellationToken cancellationToken)
         {
             try
             {
-                return await _repository.GetAll(cancellationToken);
+                var productCached = await _cacheHelper.GetDataAsync<List<ProductDomain>>(keyCacheAll);
+
+                if (productCached != null && productCached.Count > 0)
+                {
+                    return productCached;
+                }
+
+                var listProduct = await _repository.GetAll(cancellationToken);
+                await _cacheHelper.SetDataAsync(keyCacheAll, 10, JsonConvert.SerializeObject(listProduct));
+                return listProduct;
             }
             catch (Exception ex)
             {
