@@ -131,6 +131,7 @@ As rotas e as operações disponíveis estão descritas no Swagger.
          -param: productId
          -param: userId
          -param: expirationDate
+
    - **Gestão de Usuários**
      - *** Adicionar Usuário***
        POST /user 
@@ -143,6 +144,7 @@ As rotas e as operações disponíveis estão descritas no Swagger.
          -param: user
          -param: id
          -param: fullName
+
    - **Gestão de Clientes**
      - *** Adicionar Cliente***
        POST /customer 
@@ -155,9 +157,10 @@ As rotas e as operações disponíveis estão descritas no Swagger.
          -param: user
          -param: id
          -param: fullName
+
    - **Gestão de Portfolio do cliente**
      - *** Adicionar Operação***
-       POST /portfolio 
+       POST /portfolio
      - *** Busca portfolio do cliente***
        GET /portfolio
          -param: customerId
@@ -166,7 +169,9 @@ As rotas e as operações disponíveis estão descritas no Swagger.
          -param: customerId
 
 
-```
+````
+
+---
 
 ## Testes
 
