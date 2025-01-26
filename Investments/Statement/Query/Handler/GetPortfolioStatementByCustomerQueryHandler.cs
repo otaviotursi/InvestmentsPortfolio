@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Statement.Command.Handler
 {
-    public class GetPortfolioStatementByCustomerQueryHandler
+    public class GetPortfolioStatementByCustomerQueryHandler : IRequestHandler<GetPortfolioStatementByCustomerQuery, List<PortfolioStatementDomain>>
     {
         private readonly IPortfolioStatementRepository _repository;
         private readonly ICacheHelper _cacheHelper;

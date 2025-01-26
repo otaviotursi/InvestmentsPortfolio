@@ -22,15 +22,15 @@ namespace Products.Command.Handler
             _mapper = mapper;
         }
 
-        public async Task<string> Handle(UpdateProductCommand command, CancellationToken cancellationToken)
+        public Task<string> Handle(UpdateProductCommand command, CancellationToken cancellationToken)
         {
             try
             {
 
                 var productEvent = _mapper.Map<UpdateProductEvent>(command);
-                await _mediator.Publish(productEvent);
+                _mediator.Publish(productEvent);
 
-                return await Task.FromResult("Produto alterado com sucesso");
+                return Task.FromResult("Produto alterado com sucesso");
             }
             catch (Exception ex)
             {

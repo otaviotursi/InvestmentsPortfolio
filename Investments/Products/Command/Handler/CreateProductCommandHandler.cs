@@ -21,17 +21,17 @@ namespace Products.Command.Handler
             _mapper = mapper;
         }
 
-        public async Task<string> Handle(CreateProductCommand command, CancellationToken cancellationToken)
+        public Task<string> Handle(CreateProductCommand command, CancellationToken cancellationToken)
         {
             try
             {
                 var product = _mapper.Map<ProductDomain>(command);
 
                 var productEvent = _mapper.Map<CreateProductEvent>(command);
-                await _mediator.Publish(productEvent);
+               _mediator.Publish(productEvent);
 
 
-                return await Task.FromResult("Produto criado com sucesso");
+                return Task.FromResult("Produto criado com sucesso");
             }
             catch (Exception ex)
             {

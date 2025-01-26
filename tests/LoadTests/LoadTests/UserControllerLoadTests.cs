@@ -26,8 +26,10 @@ namespace LoadTests
             {
                 var createUserStep = Step.Run("create_user", context, async () =>
                 {
-                    Console.WriteLine($"POST {url}/User");
-                    var json = "{\"fullName\":\"Test User\",\"user\":\"testuser\"}";
+                    Console.WriteLine($"POST {url}/User"); 
+                    int randomId = new Random().Next(1, 100000);
+                    var json = $"{{\"fullName\":\"Test User {randomId}\",\"user\":\"testuser{randomId}\"}}";
+
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
                     var response = await httpClient.PostAsync($"{url}/User", content);
                     Console.WriteLine($"Response: {response}");
@@ -41,7 +43,7 @@ namespace LoadTests
 
                 var updateUserStep = Step.Run("update_user", context, async () =>
                 {
-                    int randomId = new Random().Next(1, 10);
+                    int randomId = new Random().Next(1, 100);
                     Console.WriteLine($"PUT {url}/User");
                     var json = $"{{\"id\":{randomId},\"fullName\":\"Updated User\",\"user\":\"updateduser\"}}";
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -57,7 +59,7 @@ namespace LoadTests
 
                 var getAllUsersStep = Step.Run("get_all_users", context, async () =>
                 {
-                    int randomId = new Random().Next(1, 10);
+                    int randomId = new Random().Next(1, 100);
                     Console.WriteLine($"GET {url}/User");
                     var response = await httpClient.GetAsync($"{url}/User");
                     Console.WriteLine($"Response: {response}");
@@ -86,10 +88,10 @@ namespace LoadTests
                 return Response.Ok();
             });
 
-            scenario = scenario.WithLoadSimulations(
-                Simulation.Inject(rate: 5, interval: TimeSpan.FromSeconds(0), during: TimeSpan.FromSeconds(10)),
-                Simulation.RampingInject(rate: maxRate, interval: TimeSpan.FromSeconds(10), during: TimeSpan.FromSeconds(executionTimeSeconds))
+            scenario = scenario.WithoutWarmUp().WithLoadSimulations(
+                Simulation.Inject(rate: maxRate, interval: TimeSpan.FromSeconds(1), during: TimeSpan.FromSeconds(executionTimeSeconds))
             );
+
 
             NBomberRunner.RegisterScenarios(scenario).Run();
         }

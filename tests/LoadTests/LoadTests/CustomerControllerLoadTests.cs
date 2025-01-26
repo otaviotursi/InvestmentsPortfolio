@@ -28,7 +28,10 @@ namespace LoadTests
                 var createCustomerStep = Step.Run("create_customer", context, async () =>
                 {
                     Console.WriteLine($"POST {url}/Customer");
-                    var json = "{\"fullName\":\"Test Customer\",\"user\":\"testcustomer\"}";
+
+                    int randomId = new Random().Next(1, 100000);
+                    var json = $"{{\"fullName\":\"Test Customer {randomId}\",\"user\":\"testcustomer{randomId}\"}}";
+
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
                     var response = await httpClient.PostAsync($"{url}/Customer", content);
                     Console.WriteLine($"Response: {response}");
@@ -42,7 +45,7 @@ namespace LoadTests
 
                 var updateCustomerStep = Step.Run("update_customer", context, async () =>
                 {
-                    int randomId = new Random().Next(1, 10);
+                    int randomId = new Random().Next(1, 100);
                     Console.WriteLine($"PUT {url}/Customer");
                     var json = $"{{\"id\":{randomId},\"fullName\":\"Updated Customer\",\"user\":\"updatedcustomer\"}}";
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -86,9 +89,8 @@ namespace LoadTests
                 return Response.Ok();
             });
 
-            scenario = scenario.WithLoadSimulations(
-                Simulation.Inject(rate: 5, interval: TimeSpan.FromSeconds(0), during: TimeSpan.FromSeconds(10)),
-                Simulation.RampingInject(rate: maxRate, interval: TimeSpan.FromSeconds(10), during: TimeSpan.FromSeconds(executionTimeSeconds))
+            scenario = scenario.WithoutWarmUp().WithLoadSimulations(
+                Simulation.Inject(rate: maxRate, interval: TimeSpan.FromSeconds(1), during: TimeSpan.FromSeconds(executionTimeSeconds))
             );
 
             NBomberRunner.RegisterScenarios(scenario).Run();
