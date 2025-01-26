@@ -10,7 +10,7 @@ namespace Portfolio.Command.Handler
     {
         private readonly IPortfolioRepository _repository;
         private readonly ICacheHelper _cacheHelper;
-        private readonly string keyCacheAll = "portfolio_all";
+        private readonly string keyCacheAll = "_portfolio_all";
 
         public GetPortfolioAllCustomersQueryHandler(IPortfolioRepository repository, ICacheHelper cacheHelper)
         {
@@ -30,8 +30,12 @@ namespace Portfolio.Command.Handler
                 }
 
                 var listPortfolio = await _repository.GetAll(cancellationToken);
-                await _cacheHelper.SetDataAsync(keyCacheAll, 10, JsonConvert.SerializeObject(listPortfolio));
-                return listPortfolio;
+                if (listPortfolio != null && listPortfolio.Count > 0)
+                {
+
+                    await _cacheHelper.SetDataAsync(keyCacheAll, 10, listPortfolio);
+                }
+                    return listPortfolio;
             }
             catch (Exception ex)
             {

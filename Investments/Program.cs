@@ -1,6 +1,7 @@
 using Investments;
 using Investments.Infrastructure;
 using Microsoft.AspNetCore.Hosting;
+using MongoDB.Bson.Serialization;
 using Serilog;
 
 public class Program

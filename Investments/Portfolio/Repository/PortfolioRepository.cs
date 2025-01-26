@@ -1,5 +1,6 @@
 ﻿using Infrastructure.Repository.Entities;
 using Microsoft.Extensions.Options;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using Portfolio.Repository.Interface;
 using System;
@@ -48,6 +49,7 @@ namespace Portfolio.Repository
             {
                 var addNewItem = Builders<PortfolioDomain>.Update.Push(x => x.ItensPortfolio, new ItemPortfolio
                 {
+                    Id = ObjectId.GenerateNewId(),
                     ProductId = product.ProductId,
                     ProductName = product.ProductName,
                     AmountNegotiated = product.AmountNegotiated,

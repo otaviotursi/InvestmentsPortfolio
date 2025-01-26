@@ -44,7 +44,8 @@ namespace LoadTests
                         ""description"": ""Test Description"",
                         ""productType"": ""{productTypes[random.Next(productTypes.Length)]}"",
                         ""unitPrice"": {unitPrices[random.Next(unitPrices.Length)]},
-                        ""price"": 100.0
+                        ""price"": 100.0,
+                        ""expirationDate"": ""{DateTime.Now.ToString("yyyy-MM-dd")}""
                     }}";
 
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -74,7 +75,8 @@ namespace LoadTests
                         ""description"": ""Updated Description"",
                         ""productType"": ""{productTypes[random.Next(productTypes.Length)]}"",
                         ""unitPrice"": {unitPrices[random.Next(unitPrices.Length)]},
-                        ""price"": 150.0
+                        ""price"": 150.0,
+                        ""expirationDate"": ""{DateTime.Now.ToString("yyyy-MM-dd")}""
                     }}";
 
                     var content = new StringContent(json, Encoding.UTF8, "application/json");
@@ -107,28 +109,26 @@ namespace LoadTests
                     // Incrementa o contador e redefine o GUID a cada 10 execuções
                     if (++deleteCounter % 10 == 0)
                     {
-                        currentGuid = Guid.NewGuid();
+                        Console.WriteLine($"DELETE {url}/Product/{currentGuid}");
+                        var response = await httpClient.DeleteAsync($"{url}/Product/{currentGuid}");
+                        Console.WriteLine($"Response: {response}");
+
                         Console.WriteLine($"New GUID generated for delete: {currentGuid}");
+                        if (response.IsSuccessStatusCode && response.Headers.Date.HasValue)
+                        {
+                            var responseTime = DateTime.UtcNow - response.Headers.Date.Value.UtcDateTime;
+                            return responseTime.TotalMilliseconds < maxMilliseconds ? Response.Ok() : Response.Fail();
+                        }
                     }
 
-                    Console.WriteLine($"DELETE {url}/Product/{currentGuid}");
-                    var response = await httpClient.DeleteAsync($"{url}/Product/{currentGuid}");
-                    Console.WriteLine($"Response: {response}");
-
-                    if (response.IsSuccessStatusCode && response.Headers.Date.HasValue)
-                    {
-                        var responseTime = DateTime.UtcNow - response.Headers.Date.Value.UtcDateTime;
-                        return responseTime.TotalMilliseconds < maxMilliseconds ? Response.Ok() : Response.Fail();
-                    }
                     return Response.Fail();
                 });
 
                 return Response.Ok();
             });
 
-            scenario = scenario.WithLoadSimulations(
-                Simulation.Inject(rate: 5, interval: TimeSpan.FromSeconds(0), during: TimeSpan.FromSeconds(10)),
-                Simulation.RampingInject(rate: maxRate, interval: TimeSpan.FromSeconds(10), during: TimeSpan.FromSeconds(executionTimeSeconds))
+            scenario = scenario.WithoutWarmUp().WithLoadSimulations(
+                Simulation.Inject(rate: maxRate, interval: TimeSpan.FromSeconds(1), during: TimeSpan.FromSeconds(executionTimeSeconds))
             );
 
             NBomberRunner.RegisterScenarios(scenario).Run();

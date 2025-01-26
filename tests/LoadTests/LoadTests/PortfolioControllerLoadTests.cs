@@ -59,33 +59,6 @@ namespace LoadTests
                     return Response.Fail();
                 });
 
-                var updatePortfolioStep = Step.Run("update_portfolio", context, async () =>
-                {
-                    Console.WriteLine($"PUT {url}/Portfolio");
-
-                    var operationTypes = new[] { "buy", "sell" };
-                    var random = new Random();
-
-                    var json = $@"
-                    {{
-                        ""productId"": ""{currentGuid}"",
-                        ""customerId"": 1,
-                        ""productName"": ""aapl"",
-                        ""amountNegotiated"": 150,
-                        ""operationType"": ""{operationTypes[random.Next(operationTypes.Length)]}""
-                    }}";
-
-                    var content = new StringContent(json, Encoding.UTF8, "application/json");
-                    var response = await httpClient.PutAsync($"{url}/Portfolio", content);
-                    Console.WriteLine($"Response: {response}");
-
-                    if (response.IsSuccessStatusCode && response.Headers.Date.HasValue)
-                    {
-                        var responseTime = DateTime.UtcNow - response.Headers.Date.Value.UtcDateTime;
-                        return responseTime.TotalMilliseconds < maxMilliseconds ? Response.Ok() : Response.Fail();
-                    }
-                    return Response.Fail();
-                });
 
                 var getAllPortfoliosStep = Step.Run("get_all_portfolios", context, async () =>
                 {
@@ -100,19 +73,13 @@ namespace LoadTests
                     return Response.Fail();
                 });
 
-                var deletePortfolioStep = Step.Run("delete_portfolio", context, async () =>
+                var getPortfoliosStatementStep = Step.Run("get_by_customerId", context, async () =>
                 {
-                    // Incrementa o contador e redefine o GUID a cada 10 execuções
-                    if (++deleteCounter % 10 == 0)
-                    {
-                        currentGuid = Guid.NewGuid();
-                        Console.WriteLine($"New GUID generated for delete: {currentGuid}");
-                    }
+                    var random = new Random();
 
-                    Console.WriteLine($"DELETE {url}/Portfolio/{currentGuid}");
-                    var response = await httpClient.DeleteAsync($"{url}/Portfolio/{currentGuid}");
+                    Console.WriteLine($"GET {url}/Portfolio/Statement");
+                    var response = await httpClient.GetAsync($"{url}/Portfolio/Statement?customerId={random.NextInt64(0,20)}");
                     Console.WriteLine($"Response: {response}");
-
                     if (response.IsSuccessStatusCode && response.Headers.Date.HasValue)
                     {
                         var responseTime = DateTime.UtcNow - response.Headers.Date.Value.UtcDateTime;
@@ -124,9 +91,8 @@ namespace LoadTests
                 return Response.Ok();
             });
 
-            scenario = scenario.WithLoadSimulations(
-                Simulation.Inject(rate: 5, interval: TimeSpan.FromSeconds(0), during: TimeSpan.FromSeconds(10)),
-                Simulation.RampingInject(rate: maxRate, interval: TimeSpan.FromSeconds(10), during: TimeSpan.FromSeconds(executionTimeSeconds))
+            scenario = scenario.WithoutWarmUp().WithLoadSimulations(
+                Simulation.Inject(rate: maxRate, interval: TimeSpan.FromSeconds(1), during: TimeSpan.FromSeconds(executionTimeSeconds))
             );
 
             NBomberRunner.RegisterScenarios(scenario).Run();

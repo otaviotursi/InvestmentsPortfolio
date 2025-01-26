@@ -8,21 +8,22 @@ using System.Threading.Tasks;
 using Infrastructure.Repository.Entities;
 using Users.Query.Handler;
 using Users.Query;
+using Infrastructure.Cache;
 
 namespace UnitTests.Users.Query.Handler
 {
 
     public class GetByUserQueryHandlerTests
     {
-        private readonly Mock<IMediator> _mediatorMock;
+        private readonly Mock<ICacheHelper> _cacheHelper;
         private readonly Mock<IUserRepository> _repositoryMock;
         private readonly GetByUserQueryHandler _handler;
 
         public GetByUserQueryHandlerTests()
         {
-            _mediatorMock = new Mock<IMediator>();
+            _cacheHelper = new Mock<ICacheHelper>();
             _repositoryMock = new Mock<IUserRepository>();
-            _handler = new GetByUserQueryHandler(_mediatorMock.Object, _repositoryMock.Object);
+            _handler = new GetByUserQueryHandler(_repositoryMock.Object, _cacheHelper.Object);
         }
 
         [Fact(DisplayName = "Handle should return UserDomain for given query")]

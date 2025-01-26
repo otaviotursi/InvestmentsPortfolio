@@ -9,8 +9,8 @@ namespace Products.Command.Handler
     {
         private readonly IProductRepository _repository;
         private readonly ICacheHelper _cacheHelper;
-        private readonly string _keyCacheByName = "product_name_{0}";
-        private readonly string keyCacheById = "product_id_{0}";
+        private readonly string _keyCacheByName = "_product_name_{0}";
+        private readonly string keyCacheById = "_product_id_{0}";
 
         public GetProductByQueryHandler(IProductRepository repository, ICacheHelper cacheHelper)
         {
@@ -49,7 +49,11 @@ namespace Products.Command.Handler
                 return productCached;
             }
             var product = await _repository.GetByName(query.Name, cancellationToken);
-            await _cacheHelper.SetDataAsync(keyCache, 10, JsonConvert.SerializeObject(product));
+            if (product != null)
+            {
+
+                await _cacheHelper.SetDataAsync(keyCache, 10, product);
+            }
             return product;
         }
 
@@ -62,7 +66,11 @@ namespace Products.Command.Handler
                 return productCached;
             }
             var product = await _repository.GetById((Guid)query.Id, cancellationToken);
-            await _cacheHelper.SetDataAsync(keyCache, 10, JsonConvert.SerializeObject(product));
+            if (product != null)
+            {
+
+                await _cacheHelper.SetDataAsync(keyCache, 10, product);
+            }
             return product;
         }
     }

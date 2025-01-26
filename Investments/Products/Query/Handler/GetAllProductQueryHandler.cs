@@ -11,7 +11,7 @@ namespace Products.Command.Handler
     {
         private readonly IProductRepository _repository;
         private readonly ICacheHelper _cacheHelper;
-        private readonly string keyCacheAll = "product_all";
+        private readonly string keyCacheAll = "_product_all";
 
 
         public GetAllProductQueryHandler(IProductRepository repository, ICacheHelper cacheHelper)
@@ -32,7 +32,11 @@ namespace Products.Command.Handler
                 }
 
                 var listProduct = await _repository.GetAll(cancellationToken);
-                await _cacheHelper.SetDataAsync(keyCacheAll, 10, JsonConvert.SerializeObject(listProduct));
+                if (productCached != null && productCached.Count > 0){
+                    await _cacheHelper.SetDataAsync(keyCacheAll, 10, listProduct);
+
+                }
+
                 return listProduct;
             }
             catch (Exception ex)

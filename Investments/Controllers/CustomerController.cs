@@ -1,9 +1,7 @@
 ﻿using Customers.Command;
-using Customers.Repository.Interface;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Customers.Command;
-using Customers.Repository.Interface;
+using Customers.Query;
 
 namespace Investments.Controllers
 {

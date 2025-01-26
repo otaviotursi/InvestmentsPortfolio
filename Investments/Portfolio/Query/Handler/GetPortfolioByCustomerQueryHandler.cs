@@ -15,8 +15,7 @@ namespace Portfolio.Command.Handler
     {
         private readonly IPortfolioRepository _repository;
         private readonly ICacheHelper _cacheHelper;
-        private readonly string _keyCacheByName = "portfolio_name_{0}";
-        private readonly string keyCacheById = "portfolio_id_{0}";
+        private readonly string keyCacheById = "_portfolio_id_{0}";
 
         public GetPortfolioByCustomerQueryHandler(IPortfolioRepository repository, ICacheHelper cacheHelper)
         {
@@ -48,7 +47,12 @@ namespace Portfolio.Command.Handler
                 return portfolioCached;
             }
             var portfolio = await _repository.GetById(query.CustomerId, cancellationToken);
-            await _cacheHelper.SetDataAsync(keyCache, 10, JsonConvert.SerializeObject(portfolio));
+
+            if (portfolio != null)
+            {
+                await _cacheHelper.SetDataAsync(keyCache, 10, portfolio);
+            }
+
             return portfolio;
         }
     }

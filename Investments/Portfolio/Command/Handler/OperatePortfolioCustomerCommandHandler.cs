@@ -26,9 +26,9 @@ namespace Portfolio.Command.Handler
             {
 
                 var productByQuery = await _mediator.Send(new GetProductByQuery(command.ProductId), cancellationToken);
-                var hasQuantity = productByQuery.AvailableQuantity >= command.AmountNegotiated;
+                var hasQuantity = (productByQuery?.AvailableQuantity is null ? 0 : productByQuery?.AvailableQuantity ) >= command.AmountNegotiated;
 
-                if (!hasQuantity && string.Equals(command.OperationType,"BUY", StringComparison.OrdinalIgnoreCase))
+                if (!hasQuantity && string.Equals(command.OperationType, "BUY", StringComparison.OrdinalIgnoreCase))
                 {
                     throw new Exception("Quantidade disponivel para compra insuficiente");
                 }
@@ -36,18 +36,18 @@ namespace Portfolio.Command.Handler
 
                 var portfolio = _mapper.Map<PortfolioRequest>(command);
                 if (string.Equals(command.OperationType, "buy", StringComparison.OrdinalIgnoreCase)) {
-                    portfolio.ValueNegotiated = command.AmountNegotiated * productByQuery.UnitPrice;
+                    portfolio.ValueNegotiated = command.AmountNegotiated * productByQuery?.UnitPrice ?? 0;
                     await _mediator.Publish(new InsertPortfolioEvent(portfolio), cancellationToken);
 
-                    var availableQuantity = productByQuery.AvailableQuantity - command.AmountNegotiated;
-                    await _mediator.Publish(new UpdateProductEvent(command.ProductId, availableQuantity, command.OperationType, productByQuery.UnitPrice, 0, productByQuery.ProductType, productByQuery.Name), cancellationToken);
+                    decimal availableQuantity = productByQuery?.AvailableQuantity ?? 0  + command.AmountNegotiated;
+                    await _mediator.Publish(new UpdateProductEvent(command.ProductId, availableQuantity, command.OperationType, productByQuery?.UnitPrice ?? 0, 0, productByQuery?.ProductType, productByQuery?.Name), cancellationToken);
                 }
                 else if (string.Equals(command.OperationType, "sell", StringComparison.OrdinalIgnoreCase))
                 {
                     await _mediator.Publish(new DeletePortfolioEvent(portfolio), cancellationToken);
 
-                    var availableQuantity = productByQuery.AvailableQuantity + command.AmountNegotiated;
-                    await _mediator.Publish(new UpdateProductEvent(command.ProductId, availableQuantity, command.OperationType, productByQuery.UnitPrice, 0, productByQuery.ProductType, productByQuery.Name), cancellationToken);
+                    decimal availableQuantity = productByQuery?.AvailableQuantity ?? 0  + command.AmountNegotiated;
+                    await _mediator.Publish(new UpdateProductEvent(command.ProductId, availableQuantity, command.OperationType, productByQuery?.UnitPrice ?? 0, 0, productByQuery?.ProductType, productByQuery?.Name), cancellationToken);
                 }
 
                 //chama evento de statement portfolio

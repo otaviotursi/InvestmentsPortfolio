@@ -1,28 +1,25 @@
 ﻿using Moq;
-using Xunit;
-using Customers.Command.Handler;
 using Customers.Repository.Interface;
 using MediatR;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
 using Infrastructure.Repository.Entities;
-using Customers.Command;
+using Customers.Query.Handler;
+using Customers.Query;
+using Infrastructure.Cache;
 
 namespace UnitTests.Customers.Query.Handler
 {
 
     public class GetAllCustomerQueryHandlerTests
     {
-        private readonly Mock<IMediator> _mediatorMock;
         private readonly Mock<ICustomerRepository> _repositoryMock;
         private readonly GetAllCustomerQueryHandler _handler;
+        private readonly Mock<ICacheHelper> _cacheHelper;
 
         public GetAllCustomerQueryHandlerTests()
         {
-            _mediatorMock = new Mock<IMediator>();
+            _cacheHelper = new Mock<ICacheHelper>();
             _repositoryMock = new Mock<ICustomerRepository>();
-            _handler = new GetAllCustomerQueryHandler(_mediatorMock.Object, _repositoryMock.Object);
+            _handler = new GetAllCustomerQueryHandler(_repositoryMock.Object, _cacheHelper.Object);
         }
 
         [Fact(DisplayName = "Handle should return list of CustomerDomain")]

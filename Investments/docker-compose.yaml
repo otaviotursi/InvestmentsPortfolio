@@ -14,11 +14,12 @@ services:
     image: "mongo:latest"
     container_name: mongodb
     ports:
-      - "27017:27017"
+    - "27017:27017"
     mem_limit: 2g
     networks:
-      - kafka-network
-    command: ["mongod", "--storageEngine", "wiredTiger", "--wiredTigerCacheSizeGB", "1"]
+    - kafka-network
+    command: ["mongod", "--storageEngine", "wiredTiger", "--wiredTigerCacheSizeGB", "1", "--maxConns", "5000"]
+
 
   zookeeper:
     image: 'confluentinc/cp-zookeeper:latest'

@@ -4,7 +4,7 @@ namespace Infrastructure.Cache
 {
     public interface ICacheHelper
     {
-        Task SetDataAsync(string key, int seconds, string data);
+        Task SetDataAsync<T>(string key, int seconds, T data);
 
 
         Task<T?> GetDataAsync<T>(string key);
