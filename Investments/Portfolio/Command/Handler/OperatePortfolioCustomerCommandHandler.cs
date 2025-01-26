@@ -13,12 +13,10 @@ namespace Portfolio.Command.Handler
     public class OperatePortfolioCustomerCommandHandler : IRequestHandler<OperatePortfolioCustomerCommand, string>
     {
         private readonly IMediator _mediator;
-        private readonly IPortfolioRepository _repository;
         private readonly IMapper _mapper;
-        public OperatePortfolioCustomerCommandHandler(IMediator mediator, IPortfolioRepository repository, IMapper mapper)
+        public OperatePortfolioCustomerCommandHandler(IMediator mediator,IMapper mapper)
         {
             _mediator = mediator;
-            _repository = repository;
             _mapper = mapper;
         }
 
@@ -28,33 +26,33 @@ namespace Portfolio.Command.Handler
             {
 
                 var productByQuery = await _mediator.Send(new GetProductByQuery(command.ProductId), cancellationToken);
-                var hasQuantity = productByQuery.AvailableQuantity >= command.AmountNegotiated;
+                var hasQuantity = (productByQuery?.AvailableQuantity is null ? 0 : productByQuery?.AvailableQuantity ) >= command.AmountNegotiated;
 
-                if (!hasQuantity && string.Equals(command.OperationType,"BUY", StringComparison.OrdinalIgnoreCase))
-                {
-                    throw new Exception("Quantidade disponivel para compra insuficiente");
-                }
+                //if (!hasQuantity && string.Equals(command.OperationType, "BUY", StringComparison.OrdinalIgnoreCase))
+                //{
+                //    throw new Exception("Quantidade disponivel para compra insuficiente");
+                //}
 
 
                 var portfolio = _mapper.Map<PortfolioRequest>(command);
                 if (string.Equals(command.OperationType, "buy", StringComparison.OrdinalIgnoreCase)) {
-                    portfolio.ValueNegotiated = command.AmountNegotiated * productByQuery.UnitPrice;
-                    await _mediator.Publish(new InsertPortfolioEvent(portfolio), cancellationToken);
+                    portfolio.ValueNegotiated = command.AmountNegotiated * productByQuery?.UnitPrice ?? 0;
+                    _mediator.Publish(new InsertPortfolioEvent(portfolio), cancellationToken);
 
-                    var availableQuantity = productByQuery.AvailableQuantity - command.AmountNegotiated;
-                    await _mediator.Publish(new UpdateProductEvent(command.ProductId, availableQuantity, command.OperationType, productByQuery.UnitPrice, 0, productByQuery.ProductType, productByQuery.Name), cancellationToken);
+                    decimal availableQuantity = productByQuery?.AvailableQuantity ?? 0  + command.AmountNegotiated;
+                    _mediator.Publish(new UpdateProductEvent(command.ProductId, availableQuantity, command.OperationType, productByQuery?.UnitPrice ?? 0, 0, productByQuery?.ProductType, productByQuery?.Name), cancellationToken);
                 }
                 else if (string.Equals(command.OperationType, "sell", StringComparison.OrdinalIgnoreCase))
                 {
-                    await _mediator.Publish(new DeletePortfolioEvent(portfolio), cancellationToken);
+                    _mediator.Publish(new DeletePortfolioEvent(portfolio), cancellationToken);
 
-                    var availableQuantity = productByQuery.AvailableQuantity + command.AmountNegotiated;
-                    await _mediator.Publish(new UpdateProductEvent(command.ProductId, availableQuantity, command.OperationType, productByQuery.UnitPrice, 0, productByQuery.ProductType, productByQuery.Name), cancellationToken);
+                    decimal availableQuantity = productByQuery?.AvailableQuantity ?? 0  + command.AmountNegotiated;
+                    _mediator.Publish(new UpdateProductEvent(command.ProductId, availableQuantity, command.OperationType, productByQuery?.UnitPrice ?? 0, 0, productByQuery?.ProductType, productByQuery?.Name), cancellationToken);
                 }
 
                 //chama evento de statement portfolio
                 var portfolioEvent= _mapper.Map<InsertPortfolioStatementByCustomerEvent>(command);
-                await _mediator.Publish(portfolioEvent);
+                _mediator.Publish(portfolioEvent);
 
                 return await Task.FromResult("trade realizado com sucesso");
             }

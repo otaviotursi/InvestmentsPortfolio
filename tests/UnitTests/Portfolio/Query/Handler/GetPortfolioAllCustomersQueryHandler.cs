@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Infrastructure.Cache;
 using Infrastructure.Repository.Entities;
 using MediatR;
 using Moq;
@@ -15,15 +16,15 @@ namespace UnitTests.Portfolio.Query.Handler
 
     public class GetPortfolioAllCustomersQueryHandlerTests
     {
-        private readonly Mock<IMediator> _mediatorMock;
+        private readonly Mock<ICacheHelper> _cacheHelper;
         private readonly Mock<IPortfolioRepository> _repositoryMock;
         private readonly GetPortfolioAllCustomersQueryHandler _handler;
 
         public GetPortfolioAllCustomersQueryHandlerTests()
         {
-            _mediatorMock = new Mock<IMediator>();
+            _cacheHelper = new Mock<ICacheHelper>();
             _repositoryMock = new Mock<IPortfolioRepository>();
-            _handler = new GetPortfolioAllCustomersQueryHandler(_mediatorMock.Object, _repositoryMock.Object);
+            _handler = new GetPortfolioAllCustomersQueryHandler(_repositoryMock.Object, _cacheHelper.Object);
         }
 
         [Fact(DisplayName = "Handle should return list of PortfolioDomain")]

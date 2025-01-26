@@ -1,30 +1,41 @@
-﻿using Infrastructure.Repository.Entities;
+﻿using Infrastructure.Cache;
+using Infrastructure.Repository.Entities;
 using MediatR;
+using Newtonsoft.Json;
 using Portfolio.Repository.Interface;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Portfolio.Command.Handler
 {
     public class GetPortfolioAllCustomersQueryHandler : IRequestHandler<GetPortfolioAllCustomersQuery, List<PortfolioDomain>>
     {
-        private readonly IMediator _mediator;
         private readonly IPortfolioRepository _repository;
+        private readonly ICacheHelper _cacheHelper;
+        private readonly string keyCacheAll = "_portfolio_all";
 
-        public GetPortfolioAllCustomersQueryHandler(IMediator mediator, IPortfolioRepository repositoryWrite)
+        public GetPortfolioAllCustomersQueryHandler(IPortfolioRepository repository, ICacheHelper cacheHelper)
         {
-            _mediator = mediator;
-            _repository = repositoryWrite;
+            _repository = repository;
+            _cacheHelper = cacheHelper;
         }
 
         public async Task<List<PortfolioDomain>> Handle(GetPortfolioAllCustomersQuery command, CancellationToken cancellationToken)
         {
             try
             {
-                return await _repository.GetAll(cancellationToken);
+                var portfolioCached = await _cacheHelper.GetDataAsync<List<PortfolioDomain>>(keyCacheAll);
+
+                if (portfolioCached != null && portfolioCached.Count > 0)
+                {
+                    return portfolioCached;
+                }
+
+                var listPortfolio = await _repository.GetAll(cancellationToken);
+                if (listPortfolio != null && listPortfolio.Count > 0)
+                {
+
+                    await _cacheHelper.SetDataAsync(keyCacheAll, 10, listPortfolio);
+                }
+                    return listPortfolio;
             }
             catch (Exception ex)
             {

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Infrastructure.Repository.Entities;
 using Users.Query.Handler;
 using Users.Query;
+using Infrastructure.Cache;
 
 namespace UnitTests.Users.Query.Handler
 {
@@ -18,12 +19,13 @@ namespace UnitTests.Users.Query.Handler
         private readonly Mock<IMediator> _mediatorMock;
         private readonly Mock<IUserRepository> _repositoryMock;
         private readonly GetAllUserQueryHandler _handler;
+        private readonly Mock<ICacheHelper> _cacheHelper;
 
         public GetAllUserQueryHandlerTests()
         {
-            _mediatorMock = new Mock<IMediator>();
+            _cacheHelper = new Mock<ICacheHelper>();
             _repositoryMock = new Mock<IUserRepository>();
-            _handler = new GetAllUserQueryHandler(_mediatorMock.Object, _repositoryMock.Object);
+            _handler = new GetAllUserQueryHandler(_repositoryMock.Object, _cacheHelper.Object);
         }
 
         [Fact(DisplayName = "Handle should return list of UserDomain")]

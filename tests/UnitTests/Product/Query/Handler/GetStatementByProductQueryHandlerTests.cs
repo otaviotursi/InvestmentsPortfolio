@@ -10,18 +10,21 @@ using MediatR;
 using Infrastructure.Repository.Entities;
 using Products.Query.Handler;
 using Products.Query;
+using Infrastructure.Cache;
 
 namespace UnitTests.Product.Query.Handler
 {
     public class GetStatementByProductQueryHandlerTests
     {
+        private readonly Mock<ICacheHelper> _cacheHelper;
         private readonly Mock<IProductStatementRepository> _repositoryMock;
         private readonly GetStatementByProductQueryHandler _handler;
 
         public GetStatementByProductQueryHandlerTests()
         {
             _repositoryMock = new Mock<IProductStatementRepository>();
-            _handler = new GetStatementByProductQueryHandler(Mock.Of<IMediator>(), _repositoryMock.Object);
+            _cacheHelper = new Mock<ICacheHelper>();
+            _handler = new GetStatementByProductQueryHandler(_repositoryMock.Object, _cacheHelper.Object);
         }
 
         [Fact(DisplayName = "Should get statement by product successfully")]

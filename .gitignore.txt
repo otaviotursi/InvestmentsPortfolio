@@ -1,0 +1,9 @@
+docker exec kafka kafka-topics --bootstrap-server localhost:9092 --create --topic investment-purchased --partitions 3 --replication-factor 1
+docker exec kafka kafka-topics --bootstrap-server localhost:9092 --create --topic investment-sold --partitions 3 --replication-factor 1
+docker exec kafka kafka-topics --bootstrap-server localhost:9092 --create --topic product-inserted --partitions 3 --replication-factor 1
+docker exec kafka kafka-topics --bootstrap-server localhost:9092 --create --topic product-updated --partitions 3 --replication-factor 1
+docker exec kafka kafka-topics --bootstrap-server localhost:9092 --create --topic product-deleted --partitions 3 --replication-factor 1
+docker exec kafka kafka-topics --bootstrap-server localhost:9092 --create --topic product-expiry-notification --partitions 3 --replication-factor 1
+docker exec kafka kafka-topics --bootstrap-server localhost:9092 --create --topic insert-customer-portfolio-statement --partitions 3 --replication-factor 1
+docker exec kafka kafka-topics --bootstrap-server localhost:9092 --create --topic update-customer-portfolio --partitions 3 --replication-factor 1
+docker exec kafka kafka-topics --bootstrap-server localhost:9092 --create --topic delete-customer-portfolio --partitions 3 --replication-factor 1

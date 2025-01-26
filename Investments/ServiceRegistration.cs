@@ -7,6 +7,7 @@ using Infrastructure.Email;
 using Infrastructure.Email.Interface;
 using Infrastructure.QuartzJobs;
 using Infrastructure.Services;
+using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 using Portfolio.Command.Handler;
 using Portfolio.Repository;
@@ -41,6 +42,9 @@ namespace Investments
             AddMediatR(services, configuration);
             AddRepositories(services, configuration);
             AddServices(services, configuration);
+
+
+
         }
 
         private static void AddCronJob(IServiceCollection services, IConfiguration configuration)
@@ -167,7 +171,7 @@ namespace Investments
                 opt.InstanceName = configuration.GetSection("Regis:InstanceName")?.Value;
                 opt.Configuration = configuration.GetSection("Regis:Ip")?.Value;
             });
-            services.AddScoped<IRedisCacheHelper, RedisCacheHelper>();
+            services.AddScoped<ICacheHelper, CacheHelper>();
         }
     }
 }

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Customers.Command
+namespace Customers.Query
 {
     public class GetAllCustomerQuery : MediatR.IRequest<List<CustomerDomain>>
     {

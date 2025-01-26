@@ -18,14 +18,14 @@ namespace Products.Command.Handler
             _mediator = mediator;
         }
 
-        public async Task<string> Handle(DeleteProductCommand command, CancellationToken cancellationToken)
+        public Task<string> Handle(DeleteProductCommand command, CancellationToken cancellationToken)
         {
             try
             {
 
-                await _mediator.Publish(new DeleteProductEvent(command.Id));
+                _mediator.Publish(new DeleteProductEvent(command.Id));
 
-                return await Task.FromResult("Produto excluido com sucesso");
+                return Task.FromResult("Produto excluido com sucesso");
             }
             catch (Exception ex)
             {

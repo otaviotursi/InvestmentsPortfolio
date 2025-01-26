@@ -41,8 +41,10 @@ namespace Statement.Repository
             {
                 var portfolio = new PortfolioStatementDomain
                 {
-                    ProductId = Guid.Parse(document["Data"]["ProductId"].AsGuid.ToString()),
-                    CustomerId = ulong.Parse(document["Data"]["CustomerId"].AsString),
+                    ProductId = document["Data"]["ProductId"].BsonType == MongoDB.Bson.BsonType.ObjectId
+                    ? new Guid(document["Data"]["ProductId"].AsObjectId.ToByteArray())
+                    : document["Data"]["ProductId"].AsGuid,
+                    CustomerId = (ulong)document["Data"]["CustomerId"].AsInt64,
                     ProductName = document["Data"]["ProductName"].AsString,
                     AmountNegotiated = Convert.ToDecimal(document["Data"]["AmountNegotiated"].AsString),
                     OperationType = document["Data"]["OperationType"].AsString,
