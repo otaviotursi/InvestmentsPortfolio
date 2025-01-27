@@ -25,6 +25,11 @@ O sistema é implementado em **C#**, seguindo os padrões de **CQRS** e **Event 
 
 - Consultas de produtos e extratos devem suportar **grande volume de requisições** com tempo de resposta abaixo de **100ms**.
 
+
+### Diagrama:
+![projeto_investment_portfolio drawio](https://github.com/user-attachments/assets/b0adc7ae-2100-41e7-9b5d-8981ed7aa11b)
+
+
 ---
 
 ## Tecnologias Utilizadas
@@ -42,8 +47,10 @@ O sistema é implementado em **C#**, seguindo os padrões de **CQRS** e **Event 
 
 ### Testes:
 
-- **xUnit** (Testes unitários)\
-  Inluir teste funcional com Moq
+- **xUnit** (Testes unitários)
+
+  
+- **xUnit & Moq** (Testes Funcionais)
 
 - **NBomber** (Load tests)
 
